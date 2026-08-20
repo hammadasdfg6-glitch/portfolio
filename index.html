@@ -81,12 +81,12 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="bg-[#090d16] text-slate-100 antialiased selection:bg-brand-500 selection:text-slate-950 transition-colors duration-300 dark:bg-[#090d16] dark:text-slate-100 light:bg-slate-50 light:text-slate-900 bg-grid-pattern min-h-screen flex flex-col justify-between">
+<body class="bg-slate-50 text-slate-900 dark:bg-[#090d16] dark:text-slate-100 antialiased selection:bg-brand-500 selection:text-slate-950 transition-colors duration-300 bg-grid-pattern min-h-screen flex flex-col justify-between">
 
   <!-- =========================================================================
        HEADER / NAVIGATION
        ========================================================================= -->
-  <header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-5 bg-[#090d16]/80 dark:bg-[#090d16]/80 light:bg-white/85 backdrop-blur-md border-b border-slate-800/80 dark:border-slate-800/80 light:border-slate-200">
+  <header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-5 bg-white/90 dark:bg-[#090d16]/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800/80">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between">
         
@@ -96,10 +96,10 @@
             MH
           </span>
           <span class="flex flex-col">
-            <span class="font-bold text-slate-100 dark:text-slate-100 light:text-slate-900 tracking-tight text-base group-hover:text-brand-400 transition-colors">
+            <span class="font-bold text-slate-900 dark:text-slate-100 tracking-tight text-base group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">
               Muhammad Hammad
             </span>
-            <span class="text-[11px] font-mono text-brand-400 dark:text-brand-400 light:text-brand-600 -mt-1">
+            <span class="text-[11px] font-mono text-brand-600 dark:text-brand-400 -mt-1">
               &lt;backend-dev/&gt;
             </span>
           </span>
@@ -107,20 +107,20 @@
 
         <!-- Desktop Navigation Links -->
         <nav class="hidden md:flex items-center gap-7" aria-label="Main Navigation">
-          <a href="#home" class="nav-link text-sm font-medium text-slate-300 dark:text-slate-300 light:text-slate-600 hover:text-brand-400 dark:hover:text-brand-400 light:hover:text-brand-600 transition-colors focus:outline-none focus:text-brand-400">Home</a>
-          <a href="#about" class="nav-link text-sm font-medium text-slate-400 dark:text-slate-400 light:text-slate-600 hover:text-brand-400 dark:hover:text-brand-400 light:hover:text-brand-600 transition-colors focus:outline-none focus:text-brand-400">About</a>
-          <a href="#skills" class="nav-link text-sm font-medium text-slate-400 dark:text-slate-400 light:text-slate-600 hover:text-brand-400 dark:hover:text-brand-400 light:hover:text-brand-600 transition-colors focus:outline-none focus:text-brand-400">Skills</a>
-          <a href="#experience" class="nav-link text-sm font-medium text-slate-400 dark:text-slate-400 light:text-slate-600 hover:text-brand-400 dark:hover:text-brand-400 light:hover:text-brand-600 transition-colors focus:outline-none focus:text-brand-400">Experience</a>
-          <a href="#projects" class="nav-link text-sm font-medium text-slate-400 dark:text-slate-400 light:text-slate-600 hover:text-brand-400 dark:hover:text-brand-400 light:hover:text-brand-600 transition-colors focus:outline-none focus:text-brand-400">Projects</a>
-          <a href="#education" class="nav-link text-sm font-medium text-slate-400 dark:text-slate-400 light:text-slate-600 hover:text-brand-400 dark:hover:text-brand-400 light:hover:text-brand-600 transition-colors focus:outline-none focus:text-brand-400">Education</a>
-          <a href="#contact" class="nav-link text-sm font-medium text-slate-400 dark:text-slate-400 light:text-slate-600 hover:text-brand-400 dark:hover:text-brand-400 light:hover:text-brand-600 transition-colors focus:outline-none focus:text-brand-400">Contact</a>
+          <a href="#home" class="nav-link text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 transition-colors focus:outline-none focus:text-brand-500">Home</a>
+          <a href="#about" class="nav-link text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-brand-600 dark:hover:text-brand-400 transition-colors focus:outline-none focus:text-brand-500">About</a>
+          <a href="#skills" class="nav-link text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-brand-600 dark:hover:text-brand-400 transition-colors focus:outline-none focus:text-brand-500">Skills</a>
+          <a href="#experience" class="nav-link text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-brand-600 dark:hover:text-brand-400 transition-colors focus:outline-none focus:text-brand-500">Experience</a>
+          <a href="#projects" class="nav-link text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-brand-600 dark:hover:text-brand-400 transition-colors focus:outline-none focus:text-brand-500">Projects</a>
+          <a href="#education" class="nav-link text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-brand-600 dark:hover:text-brand-400 transition-colors focus:outline-none focus:text-brand-500">Education</a>
+          <a href="#contact" class="nav-link text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-brand-600 dark:hover:text-brand-400 transition-colors focus:outline-none focus:text-brand-500">Contact</a>
         </nav>
 
         <!-- Right Header Actions (Download CV + Dark Mode Toggle + Mobile Menu Trigger) -->
         <div class="flex items-center gap-3">
           
-          <!-- Theme Toggle Button -->
-          <button id="theme-toggle" type="button" aria-label="Toggle Color Theme" class="p-2 rounded-lg border border-slate-800 dark:border-slate-800 light:border-slate-300 bg-slate-900/80 dark:bg-slate-900/80 light:bg-slate-100 text-slate-400 hover:text-brand-400 dark:hover:text-brand-400 light:hover:text-brand-600 focus:outline-none focus:ring-2 focus:ring-brand-500 transition-all">
+          <!-- Theme Toggle Button (Desktop) -->
+          <button id="theme-toggle" type="button" aria-label="Toggle Color Theme" class="p-2 rounded-lg border border-slate-300 dark:border-slate-800 bg-slate-100 dark:bg-slate-900/80 text-slate-700 dark:text-slate-400 hover:text-brand-600 dark:hover:text-brand-400 focus:outline-none focus:ring-2 focus:ring-brand-500 transition-all">
             <!-- Sun Icon (shown in dark mode) -->
             <svg class="theme-icon-sun w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
@@ -132,7 +132,7 @@
           </button>
 
           <!-- Core Feature: Download CV Button (Desktop) -->
-          <div class="hidden sm:flex items-center gap-1.5 bg-slate-900/90 dark:bg-slate-900/90 light:bg-slate-200/80 p-1 rounded-lg border border-slate-800 dark:border-slate-800 light:border-slate-300">
+          <div class="hidden sm:flex items-center gap-1.5 bg-slate-200/80 dark:bg-slate-900/90 p-1 rounded-lg border border-slate-300 dark:border-slate-800">
             <a href="assets/Muhammad_Hammad_CV.pdf" download="Muhammad_Hammad_CV.pdf" class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-md bg-brand-500 hover:bg-brand-400 text-slate-950 text-xs font-semibold shadow-md shadow-brand-500/20 hover:shadow-brand-500/40 transition-all active:scale-95 focus:outline-none focus:ring-2 focus:ring-brand-500" aria-label="Download Muhammad Hammad CV PDF">
               <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
@@ -140,7 +140,7 @@
               <span>Download CV</span>
             </a>
             <!-- Secondary CV Preview Link -->
-            <a href="assets/Muhammad_Hammad_CV.pdf" target="_blank" rel="noopener noreferrer" class="p-1.5 text-slate-400 hover:text-brand-400 dark:hover:text-brand-400 light:hover:text-brand-600 rounded focus:outline-none focus:ring-1 focus:ring-brand-500" title="Preview CV in new tab" aria-label="Preview CV in new tab">
+            <a href="assets/Muhammad_Hammad_CV.pdf" target="_blank" rel="noopener noreferrer" class="p-1.5 text-slate-600 dark:text-slate-400 hover:text-brand-600 dark:hover:text-brand-400 rounded focus:outline-none focus:ring-1 focus:ring-brand-500" title="Preview CV in new tab" aria-label="Preview CV in new tab">
               <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
               </svg>
@@ -148,7 +148,7 @@
           </div>
 
           <!-- Mobile Hamburger Menu Button -->
-          <button id="mobile-menu-btn" type="button" aria-expanded="false" aria-controls="mobile-drawer" aria-label="Open navigation menu" class="md:hidden p-2 rounded-lg border border-slate-800 dark:border-slate-800 light:border-slate-300 bg-slate-900/80 dark:bg-slate-900/80 light:bg-slate-100 text-slate-300 dark:text-slate-300 light:text-slate-700 hover:text-brand-400 focus:outline-none focus:ring-2 focus:ring-brand-500">
+          <button id="mobile-menu-btn" type="button" aria-expanded="false" aria-controls="mobile-drawer" aria-label="Open navigation menu" class="md:hidden p-2 rounded-lg border border-slate-300 dark:border-slate-800 bg-slate-100 dark:bg-slate-900/80 text-slate-700 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 focus:outline-none focus:ring-2 focus:ring-brand-500">
             <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
             </svg>
@@ -162,25 +162,34 @@
     </div>
 
     <!-- Mobile Drawer Menu -->
-    <div id="mobile-drawer" class="hidden md:hidden border-b border-slate-800 dark:border-slate-800 light:border-slate-200 bg-[#090d16]/98 dark:bg-[#090d16]/98 light:bg-white/98 backdrop-blur-xl px-4 pt-3 pb-6 transition-all">
+    <div id="mobile-drawer" class="hidden md:hidden border-b border-slate-200 dark:border-slate-800 bg-white/98 dark:bg-[#090d16]/98 backdrop-blur-xl px-4 pt-3 pb-6 transition-all">
       <nav class="flex flex-col space-y-3 pt-2" aria-label="Mobile Navigation">
-        <a href="#home" class="mobile-nav-link text-base font-medium text-slate-200 dark:text-slate-200 light:text-slate-800 hover:text-brand-400 py-1.5 px-2 rounded-md">Home</a>
-        <a href="#about" class="mobile-nav-link text-base font-medium text-slate-300 dark:text-slate-300 light:text-slate-700 hover:text-brand-400 py-1.5 px-2 rounded-md">About</a>
-        <a href="#skills" class="mobile-nav-link text-base font-medium text-slate-300 dark:text-slate-300 light:text-slate-700 hover:text-brand-400 py-1.5 px-2 rounded-md">Skills</a>
-        <a href="#experience" class="mobile-nav-link text-base font-medium text-slate-300 dark:text-slate-300 light:text-slate-700 hover:text-brand-400 py-1.5 px-2 rounded-md">Experience</a>
-        <a href="#projects" class="mobile-nav-link text-base font-medium text-slate-300 dark:text-slate-300 light:text-slate-700 hover:text-brand-400 py-1.5 px-2 rounded-md">Projects</a>
-        <a href="#education" class="mobile-nav-link text-base font-medium text-slate-300 dark:text-slate-300 light:text-slate-700 hover:text-brand-400 py-1.5 px-2 rounded-md">Education</a>
-        <a href="#contact" class="mobile-nav-link text-base font-medium text-slate-300 dark:text-slate-300 light:text-slate-700 hover:text-brand-400 py-1.5 px-2 rounded-md">Contact</a>
+        <a href="#home" class="mobile-nav-link text-base font-medium text-slate-800 dark:text-slate-200 hover:text-brand-600 dark:hover:text-brand-400 py-1.5 px-2 rounded-md">Home</a>
+        <a href="#about" class="mobile-nav-link text-base font-medium text-slate-700 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 py-1.5 px-2 rounded-md">About</a>
+        <a href="#skills" class="mobile-nav-link text-base font-medium text-slate-700 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 py-1.5 px-2 rounded-md">Skills</a>
+        <a href="#experience" class="mobile-nav-link text-base font-medium text-slate-700 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 py-1.5 px-2 rounded-md">Experience</a>
+        <a href="#projects" class="mobile-nav-link text-base font-medium text-slate-700 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 py-1.5 px-2 rounded-md">Projects</a>
+        <a href="#education" class="mobile-nav-link text-base font-medium text-slate-700 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 py-1.5 px-2 rounded-md">Education</a>
+        <a href="#contact" class="mobile-nav-link text-base font-medium text-slate-700 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 py-1.5 px-2 rounded-md">Contact</a>
         
-        <!-- Mobile CV Download Action -->
-        <div class="pt-4 border-t border-slate-800 dark:border-slate-800 light:border-slate-200 flex flex-col gap-2.5">
+        <!-- Mobile Actions: Theme Toggle & CV Download -->
+        <div class="pt-4 border-t border-slate-200 dark:border-slate-800 flex flex-col gap-2.5">
+          <button id="theme-toggle-mobile" type="button" class="w-full flex items-center justify-center gap-2 py-2 rounded-lg border border-slate-300 dark:border-slate-700 text-slate-700 dark:text-slate-300 font-medium text-xs">
+            <svg class="theme-icon-sun w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+            </svg>
+            <svg class="theme-icon-moon hidden w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
+            </svg>
+            <span>Toggle Theme</span>
+          </button>
           <a href="assets/Muhammad_Hammad_CV.pdf" download="Muhammad_Hammad_CV.pdf" class="w-full flex items-center justify-center gap-2 py-2.5 rounded-lg bg-brand-500 hover:bg-brand-400 text-slate-950 font-semibold text-sm shadow-md shadow-brand-500/20">
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
             </svg>
             Download CV (PDF)
           </a>
-          <a href="assets/Muhammad_Hammad_CV.pdf" target="_blank" rel="noopener noreferrer" class="w-full flex items-center justify-center gap-2 py-2 rounded-lg border border-slate-700 dark:border-slate-700 light:border-slate-300 text-slate-300 dark:text-slate-300 light:text-slate-700 text-xs font-medium">
+          <a href="assets/Muhammad_Hammad_CV.pdf" target="_blank" rel="noopener noreferrer" class="w-full flex items-center justify-center gap-2 py-2 rounded-lg border border-slate-300 dark:border-slate-700 text-slate-700 dark:text-slate-300 text-xs font-medium">
             <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
             </svg>
@@ -206,39 +215,39 @@
         <div class="lg:col-span-7 space-y-6 reveal-init">
           
           <!-- Availability / Status Chip -->
-          <div class="inline-flex items-center gap-2.5 px-3 py-1.5 rounded-full border border-brand-500/30 bg-brand-500/10 text-brand-400 dark:text-brand-400 light:text-brand-700 text-xs font-mono">
+          <div class="inline-flex items-center gap-2.5 px-3 py-1.5 rounded-full border border-brand-500/30 bg-brand-500/10 text-brand-700 dark:text-brand-400 text-xs font-mono">
             <span class="w-2 h-2 rounded-full bg-brand-500 pulse-active"></span>
             <span>Available for Backend Roles &amp; Apprenticeships</span>
           </div>
 
           <!-- Name (Only one H1 on the page for SEO) -->
           <div class="space-y-1">
-            <p class="font-mono text-sm uppercase tracking-wider text-slate-400 dark:text-slate-400 light:text-slate-500">Hello, I'm</p>
-            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-100 dark:text-slate-100 light:text-slate-900 tracking-tight leading-none">
+            <p class="font-mono text-sm uppercase tracking-wider text-slate-500 dark:text-slate-400">Hello, I'm</p>
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 dark:text-slate-100 tracking-tight leading-none">
               Muhammad Hammad
             </h1>
           </div>
 
           <!-- Typing Dynamic Subtitle / Backend Roles -->
           <div class="space-y-2">
-            <div class="text-lg sm:text-xl font-semibold text-slate-300 dark:text-slate-300 light:text-slate-700 flex items-center flex-wrap gap-1">
+            <div class="text-lg sm:text-xl font-semibold text-slate-700 dark:text-slate-300 flex items-center flex-wrap gap-1">
               <span>Backend Developer | Node.js &amp; Express.js Engineer</span>
             </div>
-            <div class="font-mono text-base sm:text-lg text-brand-400 dark:text-brand-400 light:text-brand-600 flex items-center min-h-[1.75rem]">
-              <span class="text-slate-500 mr-2">&gt;</span>
+            <div class="font-mono text-base sm:text-lg text-brand-600 dark:text-brand-400 flex items-center min-h-[1.75rem]">
+              <span class="text-slate-400 dark:text-slate-500 mr-2">&gt;</span>
               <span id="typing-text" class="font-medium"></span>
               <span class="typing-cursor"></span>
             </div>
           </div>
 
           <!-- Tagline (Verbatim) -->
-          <p class="text-base sm:text-lg text-slate-300 dark:text-slate-300 light:text-slate-600 max-w-2xl leading-relaxed">
+          <p class="text-base sm:text-lg text-slate-600 dark:text-slate-300 max-w-2xl leading-relaxed">
             "I build secure, scalable backend systems with Node.js, Express, MongoDB, and Redis."
           </p>
 
           <!-- Location Pill -->
-          <div class="flex items-center gap-2 text-slate-400 dark:text-slate-400 light:text-slate-600 text-sm font-mono">
-            <svg class="w-4 h-4 text-brand-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <div class="flex items-center gap-2 text-slate-600 dark:text-slate-400 text-sm font-mono">
+            <svg class="w-4 h-4 text-brand-500 dark:text-brand-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
             </svg>
@@ -257,8 +266,8 @@
             </a>
 
             <!-- Secondary Preview CV Button -->
-            <a href="assets/Muhammad_Hammad_CV.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-3 rounded-xl border border-slate-700 dark:border-slate-700 light:border-slate-300 bg-slate-900/60 dark:bg-slate-900/60 light:bg-slate-100 text-slate-300 dark:text-slate-300 light:text-slate-700 hover:text-brand-400 hover:border-brand-500/50 text-sm font-medium transition-all focus:outline-none focus:ring-2 focus:ring-brand-500" title="Open CV in browser tab">
-              <svg class="w-4 h-4 text-brand-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <a href="assets/Muhammad_Hammad_CV.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-100 dark:bg-slate-900/60 text-slate-700 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 hover:border-brand-500/50 text-sm font-medium transition-all focus:outline-none focus:ring-2 focus:ring-brand-500" title="Open CV in browser tab">
+              <svg class="w-4 h-4 text-brand-500 dark:text-brand-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
               </svg>
@@ -266,9 +275,9 @@
             </a>
 
             <!-- Tertiary View Projects Button (Scroll) -->
-            <a href="#projects" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl border border-slate-800 dark:border-slate-800 light:border-slate-300 bg-slate-900/30 dark:bg-slate-900/30 light:bg-white text-slate-300 dark:text-slate-300 light:text-slate-700 hover:text-slate-100 hover:border-slate-600 text-sm font-medium transition-all focus:outline-none focus:ring-2 focus:ring-brand-500">
+            <a href="#projects" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl border border-slate-300 dark:border-slate-800 bg-white dark:bg-slate-900/30 text-slate-700 dark:text-slate-300 hover:text-slate-950 dark:hover:text-slate-100 hover:border-slate-400 dark:hover:border-slate-600 text-sm font-medium transition-all focus:outline-none focus:ring-2 focus:ring-brand-500">
               <span>View Projects</span>
-              <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <svg class="w-4 h-4 text-slate-500 dark:text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
               </svg>
             </a>
@@ -277,24 +286,24 @@
 
           <!-- Social Links Strip -->
           <div class="pt-4 flex items-center gap-4">
-            <span class="text-xs font-mono text-slate-400 dark:text-slate-400 light:text-slate-500">CONNECT:</span>
+            <span class="text-xs font-mono text-slate-500 dark:text-slate-400">CONNECT:</span>
             
             <!-- Email -->
-            <a href="mailto:hammadasdfg6@gmail.com" class="p-2.5 rounded-lg bg-slate-900/80 dark:bg-slate-900/80 light:bg-slate-200 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-slate-300 dark:text-slate-300 light:text-slate-700 hover:text-brand-400 hover:border-brand-500/40 transition-all focus:outline-none focus:ring-2 focus:ring-brand-500" aria-label="Send Email to Muhammad Hammad">
+            <a href="mailto:hammadasdfg6@gmail.com" class="p-2.5 rounded-lg bg-slate-200 dark:bg-slate-900/80 border border-slate-300 dark:border-slate-800 text-slate-700 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 hover:border-brand-500/40 transition-all focus:outline-none focus:ring-2 focus:ring-brand-500" aria-label="Send Email to Muhammad Hammad">
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
               </svg>
             </a>
 
             <!-- LinkedIn -->
-            <a href="https://www.linkedin.com/in/muhammad-hammad-0a320a254/" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-lg bg-slate-900/80 dark:bg-slate-900/80 light:bg-slate-200 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-slate-300 dark:text-slate-300 light:text-slate-700 hover:text-brand-400 hover:border-brand-500/40 transition-all focus:outline-none focus:ring-2 focus:ring-brand-500" aria-label="Visit Muhammad Hammad LinkedIn Profile">
+            <a href="https://www.linkedin.com/in/muhammad-hammad-0a320a254/" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-lg bg-slate-200 dark:bg-slate-900/80 border border-slate-300 dark:border-slate-800 text-slate-700 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 hover:border-brand-500/40 transition-all focus:outline-none focus:ring-2 focus:ring-brand-500" aria-label="Visit Muhammad Hammad LinkedIn Profile">
               <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
               </svg>
             </a>
 
             <!-- GitHub -->
-            <a href="https://github.com/hammadasdfg6-glitch" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-lg bg-slate-900/80 dark:bg-slate-900/80 light:bg-slate-200 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-slate-300 dark:text-slate-300 light:text-slate-700 hover:text-brand-400 hover:border-brand-500/40 transition-all focus:outline-none focus:ring-2 focus:ring-brand-500" aria-label="Visit Muhammad Hammad GitHub Profile">
+            <a href="https://github.com/hammadasdfg6-glitch" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-lg bg-slate-200 dark:bg-slate-900/80 border border-slate-300 dark:border-slate-800 text-slate-700 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 hover:border-brand-500/40 transition-all focus:outline-none focus:ring-2 focus:ring-brand-500" aria-label="Visit Muhammad Hammad GitHub Profile">
               <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
               </svg>
@@ -306,17 +315,17 @@
 
         <!-- Hero Monogram & Backend Terminal Card (Right) -->
         <div class="lg:col-span-5 reveal-init delay-200">
-          <div class="relative rounded-2xl border border-slate-800 dark:border-slate-800 light:border-slate-300 bg-slate-900/90 dark:bg-slate-900/90 light:bg-white shadow-2xl overflow-hidden glass-card">
+          <div class="relative rounded-2xl border border-slate-300 dark:border-slate-800 bg-white dark:bg-slate-900/90 shadow-2xl overflow-hidden glass-card">
             
             <!-- Terminal Window Bar -->
-            <div class="px-4 py-3 bg-slate-950/80 dark:bg-slate-950/80 light:bg-slate-100 border-b border-slate-800 dark:border-slate-800 light:border-slate-200 flex items-center justify-between">
+            <div class="px-4 py-3 bg-slate-100 dark:bg-slate-950/80 border-b border-slate-200 dark:border-slate-800 flex items-center justify-between">
               <div class="flex items-center gap-2">
                 <span class="w-3 h-3 rounded-full bg-rose-500/80 inline-block"></span>
                 <span class="w-3 h-3 rounded-full bg-amber-500/80 inline-block"></span>
                 <span class="w-3 h-3 rounded-full bg-emerald-500/80 inline-block"></span>
               </div>
-              <span class="font-mono text-xs text-slate-400 dark:text-slate-400 light:text-slate-600 flex items-center gap-1.5">
-                <svg class="w-3.5 h-3.5 text-brand-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <span class="font-mono text-xs text-slate-600 dark:text-slate-400 flex items-center gap-1.5">
+                <svg class="w-3.5 h-3.5 text-brand-500 dark:text-brand-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M12 5l7 7-7 7"/>
                 </svg>
                 hammad@backend-node:~/core
@@ -330,57 +339,57 @@
             <div class="p-5 font-mono text-xs space-y-4">
               
               <!-- Monogram Seal & Engineer Badge -->
-              <div class="flex items-center gap-3 p-3 rounded-xl bg-slate-950/50 dark:bg-slate-950/50 light:bg-slate-50 border border-slate-800/80 dark:border-slate-800/80 light:border-slate-200">
+              <div class="flex items-center gap-3 p-3 rounded-xl bg-slate-50 dark:bg-slate-950/50 border border-slate-200 dark:border-slate-800/80">
                 <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-brand-500 to-accent-cyan flex items-center justify-center font-mono font-black text-slate-950 text-xl shadow-lg shadow-brand-500/20">
                   MH
                 </div>
                 <div class="space-y-0.5">
-                  <div class="font-bold text-sm text-slate-100 dark:text-slate-100 light:text-slate-900 font-sans">Muhammad Hammad</div>
-                  <div class="text-[11px] text-brand-400 flex items-center gap-1.5">
-                    <span class="w-1.5 h-1.5 rounded-full bg-brand-400"></span>
+                  <div class="font-bold text-sm text-slate-900 dark:text-slate-100 font-sans">Muhammad Hammad</div>
+                  <div class="text-[11px] text-brand-600 dark:text-brand-400 flex items-center gap-1.5">
+                    <span class="w-1.5 h-1.5 rounded-full bg-brand-500"></span>
                     <span>Node.js / Express Architecture</span>
                   </div>
                 </div>
               </div>
 
               <!-- Terminal System Metrics -->
-              <div class="space-y-2.5 text-slate-300 dark:text-slate-300 light:text-slate-700 bg-slate-950/40 dark:bg-slate-950/40 light:bg-slate-50/70 p-3.5 rounded-xl border border-slate-800/60 dark:border-slate-800/60 light:border-slate-200">
-                <div class="flex items-center justify-between text-[11px] pb-1 border-b border-slate-800 dark:border-slate-800 light:border-slate-200">
-                  <span class="text-slate-400">SERVER STATUS</span>
-                  <span class="text-brand-400 font-semibold flex items-center gap-1">
-                    <span class="w-1.5 h-1.5 rounded-full bg-brand-400"></span>
+              <div class="space-y-2.5 text-slate-700 dark:text-slate-300 bg-slate-50/80 dark:bg-slate-950/40 p-3.5 rounded-xl border border-slate-200 dark:border-slate-800/60">
+                <div class="flex items-center justify-between text-[11px] pb-1 border-b border-slate-200 dark:border-slate-800">
+                  <span class="text-slate-500 dark:text-slate-400">SERVER STATUS</span>
+                  <span class="text-brand-600 dark:text-brand-400 font-semibold flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-brand-500"></span>
                     ONLINE 200 OK
                   </span>
                 </div>
 
                 <div class="flex items-center justify-between">
-                  <span class="text-slate-400">Primary Runtime:</span>
-                  <span class="text-slate-200 dark:text-slate-200 light:text-slate-800 font-medium">Node.js 20+ / TypeScript</span>
+                  <span class="text-slate-500 dark:text-slate-400">Primary Runtime:</span>
+                  <span class="text-slate-800 dark:text-slate-200 font-medium">Node.js 20+ / TypeScript</span>
                 </div>
 
                 <div class="flex items-center justify-between">
-                  <span class="text-slate-400">Cache Layer:</span>
+                  <span class="text-slate-500 dark:text-slate-400">Cache Layer:</span>
                   <span class="text-accent-cyan font-medium">Redis (&lt;1ms reads)</span>
                 </div>
 
                 <div class="flex items-center justify-between">
-                  <span class="text-slate-400">Worker Engine:</span>
-                  <span class="text-brand-400 font-medium">BullMQ Job Queues</span>
+                  <span class="text-slate-500 dark:text-slate-400">Worker Engine:</span>
+                  <span class="text-brand-600 dark:text-brand-400 font-medium">BullMQ Job Queues</span>
                 </div>
 
                 <div class="flex items-center justify-between">
-                  <span class="text-slate-400">Databases:</span>
-                  <span class="text-slate-200 dark:text-slate-200 light:text-slate-800 font-medium">MongoDB, PostgreSQL, MySQL</span>
+                  <span class="text-slate-500 dark:text-slate-400">Databases:</span>
+                  <span class="text-slate-800 dark:text-slate-200 font-medium">MongoDB, PostgreSQL, MySQL</span>
                 </div>
 
                 <div class="flex items-center justify-between">
-                  <span class="text-slate-400">Test Coverage:</span>
-                  <span class="text-brand-400 font-medium">Vitest 52/52 Passed (100%)</span>
+                  <span class="text-slate-500 dark:text-slate-400">Test Coverage:</span>
+                  <span class="text-brand-600 dark:text-brand-400 font-medium">Vitest 52/52 Passed (100%)</span>
                 </div>
               </div>
 
               <!-- Quick Terminal Code Snippet -->
-              <div class="p-3 rounded-lg bg-slate-950 dark:bg-slate-950 light:bg-slate-900 text-slate-300 text-[11px] leading-relaxed border border-slate-800/80 overflow-x-auto">
+              <div class="p-3 rounded-lg bg-slate-900 text-slate-300 text-[11px] leading-relaxed border border-slate-800 overflow-x-auto">
                 <div class="text-slate-500">// Initialize high-throughput API gateway</div>
                 <div><span class="text-purple-400">const</span> app = <span class="text-brand-400">express</span>();</div>
                 <div>app.<span class="text-blue-400">use</span>(authMiddleware, rateLimiter);</div>
@@ -397,41 +406,41 @@
     <!-- =======================================================================
          ABOUT SECTION
          ======================================================================= -->
-    <section id="about" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 border-t border-slate-800/60 dark:border-slate-800/60 light:border-slate-200">
+    <section id="about" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 border-t border-slate-200 dark:border-slate-800/60">
       
       <!-- Section Header -->
       <div class="space-y-2 mb-12 reveal-init">
-        <p class="font-mono text-xs uppercase tracking-widest text-brand-400">// 01. WHO I AM</p>
-        <h2 class="text-3xl sm:text-4xl font-bold text-slate-100 dark:text-slate-100 light:text-slate-900 tracking-tight">About Me</h2>
+        <p class="font-mono text-xs uppercase tracking-widest text-brand-600 dark:text-brand-400">// 01. WHO I AM</p>
+        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-slate-100 tracking-tight">About Me</h2>
       </div>
 
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
         
         <!-- About Paragraph (Verbatim Text) -->
         <div class="lg:col-span-7 space-y-6 reveal-init">
-          <div class="p-6 sm:p-8 rounded-2xl bg-slate-900/60 dark:bg-slate-900/60 light:bg-white border border-slate-800 dark:border-slate-800 light:border-slate-200 shadow-xl">
-            <p class="text-slate-300 dark:text-slate-300 light:text-slate-700 leading-relaxed text-base sm:text-lg">
+          <div class="p-6 sm:p-8 rounded-2xl bg-white dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 shadow-xl">
+            <p class="text-slate-700 dark:text-slate-300 leading-relaxed text-base sm:text-lg">
               Backend Developer with hands-on experience engineering RESTful APIs and production backend systems using Node.js, Express.js, MongoDB, PostgreSQL, and MySQL. Skilled in building secure, scalable services with Redis caching, BullMQ background job processing, JWT authentication, and Stripe payment integrations. Currently pursuing a BS in Software Engineering at PMAS Arid Agriculture University, Rawalpindi (CGPA 3.71/4.00), while gaining real-world experience through a backend development apprenticeship at Outscalers (Pvt) Ltd.
             </p>
           </div>
 
           <!-- Key Strengths Checklist -->
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 font-mono text-xs">
-            <div class="flex items-center gap-2.5 p-3 rounded-xl bg-slate-900/40 dark:bg-slate-900/40 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-200">
-              <span class="text-brand-400 font-bold">✔</span>
-              <span class="text-slate-300 dark:text-slate-300 light:text-slate-700">RESTful APIs &amp; MVC Patterns</span>
+            <div class="flex items-center gap-2.5 p-3 rounded-xl bg-slate-100 dark:bg-slate-900/40 border border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300">
+              <span class="text-brand-500 font-bold">✔</span>
+              <span>RESTful APIs &amp; MVC Patterns</span>
             </div>
-            <div class="flex items-center gap-2.5 p-3 rounded-xl bg-slate-900/40 dark:bg-slate-900/40 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-200">
-              <span class="text-brand-400 font-bold">✔</span>
-              <span class="text-slate-300 dark:text-slate-300 light:text-slate-700">Redis &amp; BullMQ Pipelines</span>
+            <div class="flex items-center gap-2.5 p-3 rounded-xl bg-slate-100 dark:bg-slate-900/40 border border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300">
+              <span class="text-brand-500 font-bold">✔</span>
+              <span>Redis &amp; BullMQ Pipelines</span>
             </div>
-            <div class="flex items-center gap-2.5 p-3 rounded-xl bg-slate-900/40 dark:bg-slate-900/40 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-200">
-              <span class="text-brand-400 font-bold">✔</span>
-              <span class="text-slate-300 dark:text-slate-300 light:text-slate-700">Stripe Webhooks &amp; Hold-Locks</span>
+            <div class="flex items-center gap-2.5 p-3 rounded-xl bg-slate-100 dark:bg-slate-900/40 border border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300">
+              <span class="text-brand-500 font-bold">✔</span>
+              <span>Stripe Webhooks &amp; Hold-Locks</span>
             </div>
-            <div class="flex items-center gap-2.5 p-3 rounded-xl bg-slate-900/40 dark:bg-slate-900/40 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-200">
-              <span class="text-brand-400 font-bold">✔</span>
-              <span class="text-slate-300 dark:text-slate-300 light:text-slate-700">JWT &amp; Granular RBAC</span>
+            <div class="flex items-center gap-2.5 p-3 rounded-xl bg-slate-100 dark:bg-slate-900/40 border border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300">
+              <span class="text-brand-500 font-bold">✔</span>
+              <span>JWT &amp; Granular RBAC</span>
             </div>
           </div>
         </div>
@@ -440,30 +449,30 @@
         <div class="lg:col-span-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4 reveal-init delay-100">
           
           <!-- Stat 1: CGPA -->
-          <div class="p-5 rounded-2xl bg-slate-900/80 dark:bg-slate-900/80 light:bg-white border border-slate-800 dark:border-slate-800 light:border-slate-200 flex items-start gap-4">
-            <div class="p-3 rounded-xl bg-brand-500/10 text-brand-400 border border-brand-500/20">
+          <div class="p-5 rounded-2xl bg-white dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800 shadow-lg flex items-start gap-4">
+            <div class="p-3 rounded-xl bg-brand-500/10 text-brand-600 dark:text-brand-400 border border-brand-500/20">
               <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"/>
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/>
               </svg>
             </div>
             <div>
-              <div class="font-mono text-2xl font-bold text-slate-100 dark:text-slate-100 light:text-slate-900">3.71 / 4.00</div>
-              <div class="text-xs text-slate-400 dark:text-slate-400 light:text-slate-500 mt-0.5">Software Engineering CGPA</div>
-              <div class="text-[11px] text-brand-400 font-mono mt-1">PMAS Arid Agriculture University</div>
+              <div class="font-mono text-2xl font-bold text-slate-900 dark:text-slate-100">3.71 / 4.00</div>
+              <div class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Software Engineering CGPA</div>
+              <div class="text-[11px] text-brand-600 dark:text-brand-400 font-mono mt-1">PMAS Arid Agriculture University</div>
             </div>
           </div>
 
           <!-- Stat 2: Apprenticeship -->
-          <div class="p-5 rounded-2xl bg-slate-900/80 dark:bg-slate-900/80 light:bg-white border border-slate-800 dark:border-slate-800 light:border-slate-200 flex items-start gap-4">
+          <div class="p-5 rounded-2xl bg-white dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800 shadow-lg flex items-start gap-4">
             <div class="p-3 rounded-xl bg-accent-cyan/10 text-accent-cyan border border-accent-cyan/20">
               <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
               </svg>
             </div>
             <div>
-              <div class="font-mono text-lg font-bold text-slate-100 dark:text-slate-100 light:text-slate-900">Outscalers (Pvt) Ltd</div>
-              <div class="text-xs text-slate-400 dark:text-slate-400 light:text-slate-500 mt-0.5">Backend Developer Apprentice</div>
+              <div class="font-mono text-lg font-bold text-slate-900 dark:text-slate-100">Outscalers (Pvt) Ltd</div>
+              <div class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Backend Developer Apprentice</div>
               <div class="text-[11px] text-accent-cyan font-mono mt-1">Production APIs &amp; Services</div>
             </div>
           </div>
@@ -476,13 +485,13 @@
     <!-- =======================================================================
          SKILLS SECTION (With SVG Logos + Micro-Animations)
          ======================================================================= -->
-    <section id="skills" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 border-t border-slate-800/60 dark:border-slate-800/60 light:border-slate-200">
+    <section id="skills" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 border-t border-slate-200 dark:border-slate-800/60">
       
       <!-- Section Header -->
       <div class="space-y-2 mb-12 reveal-init">
-        <p class="font-mono text-xs uppercase tracking-widest text-brand-400">// 02. TECHNICAL ARSENAL</p>
-        <h2 class="text-3xl sm:text-4xl font-bold text-slate-100 dark:text-slate-100 light:text-slate-900 tracking-tight">Skills &amp; Capabilities</h2>
-        <p class="text-slate-400 dark:text-slate-400 light:text-slate-600 text-sm max-w-xl">
+        <p class="font-mono text-xs uppercase tracking-widest text-brand-600 dark:text-brand-400">// 02. TECHNICAL ARSENAL</p>
+        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-slate-100 tracking-tight">Skills &amp; Capabilities</h2>
+        <p class="text-slate-600 dark:text-slate-400 text-sm max-w-xl">
           Grouped by specialized architectural domain with official technology logos and interactive hover micro-animations.
         </p>
       </div>
@@ -491,33 +500,33 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
         <!-- Category 1: Languages -->
-        <div class="p-6 rounded-2xl bg-slate-900/60 dark:bg-slate-900/60 light:bg-white border border-slate-800 dark:border-slate-800 light:border-slate-200 hover:border-brand-500/40 transition-all reveal-init">
+        <div class="p-6 rounded-2xl bg-white dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 shadow-lg dark:shadow-none hover:border-brand-500/40 transition-all reveal-init">
           <div class="flex items-center gap-3 mb-4">
-            <span class="p-2 rounded-lg bg-brand-500/10 text-brand-400">
+            <span class="p-2 rounded-lg bg-brand-500/10 text-brand-600 dark:text-brand-400">
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
               </svg>
             </span>
-            <h3 class="font-bold text-base text-slate-100 dark:text-slate-100 light:text-slate-900">Languages</h3>
+            <h3 class="font-bold text-base text-slate-900 dark:text-slate-100">Languages</h3>
           </div>
           <div class="flex flex-wrap gap-2.5">
             <!-- JavaScript -->
-            <span class="tech-pill tech-pill-js px-3 py-1.5 rounded-lg bg-slate-950/70 dark:bg-slate-950/70 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-xs font-mono text-slate-200 dark:text-slate-200 light:text-slate-800">
+            <span class="tech-pill tech-pill-js px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-950/70 border border-slate-300 dark:border-slate-800 text-xs font-mono text-slate-800 dark:text-slate-200">
               <svg class="w-3.5 h-3.5 tech-icon" viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="4" fill="#F7DF1E"/><path d="M11.5 15.5c0 2.2-1.5 3-3.2 3-1.8 0-2.8-.8-3.3-1.8l1.7-1c.3.6.8 1.1 1.6 1.1.8 0 1.3-.4 1.3-1.3V8h2v7.5zm10.5-.5c0 2.4-1.7 3.5-3.8 3.5-2.2 0-3.5-1.2-4-2.3l1.8-1c.4.7 1.1 1.4 2.2 1.4 1 0 1.8-.5 1.8-1.3 0-.9-.7-1.2-2-1.8-1.9-.8-3.2-1.6-3.2-3.4 0-1.9 1.5-3.3 3.6-3.3 1.8 0 3 .8 3.6 1.9l-1.7 1.1c-.4-.6-.9-1.1-1.9-1.1-.8 0-1.5.4-1.5 1.1 0 .8.6 1.1 1.7 1.6 2.1.9 3.4 1.6 3.4 3.6z" fill="#000"/></svg>
               <span>JavaScript (ES6+)</span>
             </span>
             <!-- TypeScript -->
-            <span class="tech-pill tech-pill-ts px-3 py-1.5 rounded-lg bg-slate-950/70 dark:bg-slate-950/70 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-xs font-mono text-slate-200 dark:text-slate-200 light:text-slate-800">
+            <span class="tech-pill tech-pill-ts px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-950/70 border border-slate-300 dark:border-slate-800 text-xs font-mono text-slate-800 dark:text-slate-200">
               <svg class="w-3.5 h-3.5 tech-icon" viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="4" fill="#3178C6"/><path d="M12.5 18V8.5H8.8V6.5h9.4v2h-3.7V18h-2zm6.2-.2c-.9 0-1.8-.4-2.3-1.1l1.4-1.3c.3.4.6.6 1 .6.5 0 .8-.2.8-.6 0-.3-.2-.5-.9-.8-1.4-.5-2.1-1.2-2.1-2.2 0-1.3 1-2.2 2.5-2.2.8 0 1.6.3 2.1.8l-1.2 1.3c-.3-.3-.5-.4-.9-.4-.4 0-.6.2-.6.4 0 .3.2.4.9.7 1.5.6 2.2 1.2 2.2 2.3 0 1.4-1.1 2.4-2.9 2.4z" fill="#FFF"/></svg>
               <span>TypeScript</span>
             </span>
             <!-- C++ -->
-            <span class="tech-pill px-3 py-1.5 rounded-lg bg-slate-950/70 dark:bg-slate-950/70 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-xs font-mono text-slate-200 dark:text-slate-200 light:text-slate-800">
+            <span class="tech-pill px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-950/70 border border-slate-300 dark:border-slate-800 text-xs font-mono text-slate-800 dark:text-slate-200">
               <svg class="w-3.5 h-3.5 tech-icon" viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="4" fill="#00599C"/><path d="M11.5 15.5a4 4 0 110-7 4 4 0 012.8 1.2l-1.4 1.4a2 2 0 100 3l1.4 1.4a4 4 0 01-2.8 1zm3.5-3.5h1.5v-1.5h1v1.5H19v1h-1.5V14h-1v-1.5H15v-1zm4.5 0h1.5v-1.5h1v1.5H23v1h-1.5V14h-1v-1.5h-1.5v-1z" fill="#FFF"/></svg>
               <span>C++</span>
             </span>
             <!-- SQL -->
-            <span class="tech-pill px-3 py-1.5 rounded-lg bg-slate-950/70 dark:bg-slate-950/70 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-xs font-mono text-slate-200 dark:text-slate-200 light:text-slate-800">
+            <span class="tech-pill px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-950/70 border border-slate-300 dark:border-slate-800 text-xs font-mono text-slate-800 dark:text-slate-200">
               <svg class="w-3.5 h-3.5 tech-icon" viewBox="0 0 24 24" fill="none" stroke="#38BDF8" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
               <span>SQL</span>
             </span>
@@ -525,38 +534,38 @@
         </div>
 
         <!-- Category 2: Backend Architecture -->
-        <div class="p-6 rounded-2xl bg-slate-900/60 dark:bg-slate-900/60 light:bg-white border border-slate-800 dark:border-slate-800 light:border-slate-200 hover:border-brand-500/40 transition-all reveal-init delay-100">
+        <div class="p-6 rounded-2xl bg-white dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 shadow-lg dark:shadow-none hover:border-brand-500/40 transition-all reveal-init delay-100">
           <div class="flex items-center gap-3 mb-4">
             <span class="p-2 rounded-lg bg-accent-cyan/10 text-accent-cyan">
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"/>
               </svg>
             </span>
-            <h3 class="font-bold text-base text-slate-100 dark:text-slate-100 light:text-slate-900">Backend</h3>
+            <h3 class="font-bold text-base text-slate-900 dark:text-slate-100">Backend</h3>
           </div>
           <div class="flex flex-wrap gap-2.5">
             <!-- Node.js -->
-            <span class="tech-pill tech-pill-node px-3 py-1.5 rounded-lg bg-slate-950/70 dark:bg-slate-950/70 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-xs font-mono text-brand-400 dark:text-brand-400 light:text-brand-700 font-semibold">
+            <span class="tech-pill tech-pill-node px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-950/70 border border-slate-300 dark:border-slate-800 text-xs font-mono text-brand-600 dark:text-brand-400 font-semibold">
               <svg class="w-3.5 h-3.5 tech-icon" viewBox="0 0 24 24" fill="#5FA04E"><path d="M12 2l9.5 5.5v11L12 24l-9.5-5.5v-11L12 2zm0 2.3L4.5 8.6v8.8L12 21.7l7.5-4.3V8.6L12 4.3zm0 4.2a3.5 3.5 0 013.5 3.5c0 1.2-.6 2.2-1.5 2.8l1.5 3.2h-2.2l-1.3-2.8v2.8H10.5v-6h1.5v.7c.4-.5 1-.7 1.5-.7a2 2 0 10-2 2H10a3.5 3.5 0 012-3.5z"/></svg>
               <span>Node.js</span>
             </span>
             <!-- Express.js -->
-            <span class="tech-pill px-3 py-1.5 rounded-lg bg-slate-950/70 dark:bg-slate-950/70 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-xs font-mono text-slate-200 dark:text-slate-200 light:text-slate-800">
+            <span class="tech-pill px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-950/70 border border-slate-300 dark:border-slate-800 text-xs font-mono text-slate-800 dark:text-slate-200">
               <svg class="w-3.5 h-3.5 tech-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/><circle cx="12" cy="12" r="10" stroke-width="1.5"/></svg>
               <span>Express.js</span>
             </span>
             <!-- RESTful APIs -->
-            <span class="tech-pill px-3 py-1.5 rounded-lg bg-slate-950/70 dark:bg-slate-950/70 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-xs font-mono text-slate-200 dark:text-slate-200 light:text-slate-800">
+            <span class="tech-pill px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-950/70 border border-slate-300 dark:border-slate-800 text-xs font-mono text-slate-800 dark:text-slate-200">
               <svg class="w-3.5 h-3.5 tech-icon" viewBox="0 0 24 24" fill="none" stroke="#22D3EE" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
               <span>RESTful APIs</span>
             </span>
             <!-- OOP -->
-            <span class="tech-pill px-3 py-1.5 rounded-lg bg-slate-950/70 dark:bg-slate-950/70 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-xs font-mono text-slate-200 dark:text-slate-200 light:text-slate-800">
+            <span class="tech-pill px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-950/70 border border-slate-300 dark:border-slate-800 text-xs font-mono text-slate-800 dark:text-slate-200">
               <svg class="w-3.5 h-3.5 tech-icon" viewBox="0 0 24 24" fill="none" stroke="#A78BFA" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>
               <span>OOP</span>
             </span>
             <!-- MVC Architecture -->
-            <span class="tech-pill px-3 py-1.5 rounded-lg bg-slate-950/70 dark:bg-slate-950/70 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-xs font-mono text-slate-200 dark:text-slate-200 light:text-slate-800">
+            <span class="tech-pill px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-950/70 border border-slate-300 dark:border-slate-800 text-xs font-mono text-slate-800 dark:text-slate-200">
               <svg class="w-3.5 h-3.5 tech-icon" viewBox="0 0 24 24" fill="none" stroke="#34D399" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
               <span>MVC Architecture</span>
             </span>
@@ -564,28 +573,28 @@
         </div>
 
         <!-- Category 3: Databases -->
-        <div class="p-6 rounded-2xl bg-slate-900/60 dark:bg-slate-900/60 light:bg-white border border-slate-800 dark:border-slate-800 light:border-slate-200 hover:border-brand-500/40 transition-all reveal-init delay-200">
+        <div class="p-6 rounded-2xl bg-white dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 shadow-lg dark:shadow-none hover:border-brand-500/40 transition-all reveal-init delay-200">
           <div class="flex items-center gap-3 mb-4">
-            <span class="p-2 rounded-lg bg-emerald-500/10 text-emerald-400">
+            <span class="p-2 rounded-lg bg-emerald-500/10 text-emerald-600 dark:text-emerald-400">
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"/>
               </svg>
             </span>
-            <h3 class="font-bold text-base text-slate-100 dark:text-slate-100 light:text-slate-900">Databases</h3>
+            <h3 class="font-bold text-base text-slate-900 dark:text-slate-100">Databases</h3>
           </div>
           <div class="flex flex-wrap gap-2.5">
             <!-- MongoDB -->
-            <span class="tech-pill tech-pill-mongo px-3 py-1.5 rounded-lg bg-slate-950/70 dark:bg-slate-950/70 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-xs font-mono text-slate-200 dark:text-slate-200 light:text-slate-800">
+            <span class="tech-pill tech-pill-mongo px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-950/70 border border-slate-300 dark:border-slate-800 text-xs font-mono text-slate-800 dark:text-slate-200">
               <svg class="w-3.5 h-3.5 tech-icon" viewBox="0 0 24 24" fill="#47A248"><path d="M12 1.5C12 1.5 5.5 8.5 5.5 13.5C5.5 17.5 8.5 21 12 22.5C15.5 21 18.5 17.5 18.5 13.5C18.5 8.5 12 1.5 12 1.5ZM11.2 20.3C11.2 20.3 11.2 14.5 11.2 13C11.2 11.8 11.7 10.7 12 10.3C12.3 10.7 12.8 11.8 12.8 13C12.8 14.5 12.8 20.3 12.8 20.3C9.7 19.3 7.3 16.7 7.3 13.5C7.3 10 10.6 5.5 12 3.8C13.4 5.5 16.7 10 16.7 13.5C16.7 16.7 14.3 19.3 11.2 20.3Z"/></svg>
               <span>MongoDB (Mongoose)</span>
             </span>
             <!-- PostgreSQL -->
-            <span class="tech-pill px-3 py-1.5 rounded-lg bg-slate-950/70 dark:bg-slate-950/70 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-xs font-mono text-slate-200 dark:text-slate-200 light:text-slate-800">
+            <span class="tech-pill px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-950/70 border border-slate-300 dark:border-slate-800 text-xs font-mono text-slate-800 dark:text-slate-200">
               <svg class="w-3.5 h-3.5 tech-icon" viewBox="0 0 24 24" fill="#4169E1"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm3.8 15.5c-1.3.8-3.1 1-4.8.4-.7-.2-1.3-.7-1.7-1.3-.5-.7-.7-1.6-.7-2.6 0-1.8.8-3.4 2.2-4.5 1.4-1 3.2-1.5 5-1.3v1.8c-1.3-.1-2.6.2-3.6.9-.9.6-1.4 1.6-1.4 2.7 0 .6.2 1.2.5 1.7.3.4.8.7 1.3.8 1.1.4 2.3.2 3.2-.3v1.8z"/></svg>
               <span>PostgreSQL</span>
             </span>
             <!-- MySQL -->
-            <span class="tech-pill px-3 py-1.5 rounded-lg bg-slate-950/70 dark:bg-slate-950/70 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-xs font-mono text-slate-200 dark:text-slate-200 light:text-slate-800">
+            <span class="tech-pill px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-950/70 border border-slate-300 dark:border-slate-800 text-xs font-mono text-slate-800 dark:text-slate-200">
               <svg class="w-3.5 h-3.5 tech-icon" viewBox="0 0 24 24" fill="#4479A1"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm5 14.5h-2.2l-2.8-5-2.8 5H7l3.9-6.8L7.2 4h2.2l2.6 4.8L14.6 4H17l-3.8 5.7 3.8 6.8z"/></svg>
               <span>MySQL</span>
             </span>
@@ -593,23 +602,23 @@
         </div>
 
         <!-- Category 4: Caching & Queues -->
-        <div class="p-6 rounded-2xl bg-slate-900/60 dark:bg-slate-900/60 light:bg-white border border-slate-800 dark:border-slate-800 light:border-slate-200 hover:border-brand-500/40 transition-all reveal-init">
+        <div class="p-6 rounded-2xl bg-white dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 shadow-lg dark:shadow-none hover:border-brand-500/40 transition-all reveal-init">
           <div class="flex items-center gap-3 mb-4">
-            <span class="p-2 rounded-lg bg-rose-500/10 text-rose-400">
+            <span class="p-2 rounded-lg bg-rose-500/10 text-rose-500 dark:text-rose-400">
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
               </svg>
             </span>
-            <h3 class="font-bold text-base text-slate-100 dark:text-slate-100 light:text-slate-900">Caching &amp; Queues</h3>
+            <h3 class="font-bold text-base text-slate-900 dark:text-slate-100">Caching &amp; Queues</h3>
           </div>
           <div class="flex flex-wrap gap-2.5">
             <!-- Redis -->
-            <span class="tech-pill tech-pill-redis px-3 py-1.5 rounded-lg bg-slate-950/70 dark:bg-slate-950/70 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-xs font-mono text-brand-400 dark:text-brand-400 light:text-brand-700 font-semibold">
+            <span class="tech-pill tech-pill-redis px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-950/70 border border-slate-300 dark:border-slate-800 text-xs font-mono text-brand-600 dark:text-brand-400 font-semibold">
               <svg class="w-3.5 h-3.5 tech-icon" viewBox="0 0 24 24" fill="#DC382D"><path d="M21.5 6.5l-9.5-4.5-9.5 4.5 9.5 4.5 9.5-4.5zm-9.5 6.5l-9.5-4.5v5l9.5 4.5 9.5-4.5v-5l-9.5 4.5zm0 6.5l-9.5-4.5v4l9.5 4.5 9.5-4.5v-4l-9.5 4.5z"/></svg>
               <span>Redis</span>
             </span>
             <!-- BullMQ -->
-            <span class="tech-pill px-3 py-1.5 rounded-lg bg-slate-950/70 dark:bg-slate-950/70 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-xs font-mono text-slate-200 dark:text-slate-200 light:text-slate-800">
+            <span class="tech-pill px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-950/70 border border-slate-300 dark:border-slate-800 text-xs font-mono text-slate-800 dark:text-slate-200">
               <svg class="w-3.5 h-3.5 tech-icon" viewBox="0 0 24 24" fill="none" stroke="#E11D48" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
               <span>BullMQ</span>
             </span>
@@ -617,38 +626,38 @@
         </div>
 
         <!-- Category 5: Security & Validation -->
-        <div class="p-6 rounded-2xl bg-slate-900/60 dark:bg-slate-900/60 light:bg-white border border-slate-800 dark:border-slate-800 light:border-slate-200 hover:border-brand-500/40 transition-all reveal-init delay-100">
+        <div class="p-6 rounded-2xl bg-white dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 shadow-lg dark:shadow-none hover:border-brand-500/40 transition-all reveal-init delay-100">
           <div class="flex items-center gap-3 mb-4">
-            <span class="p-2 rounded-lg bg-amber-500/10 text-amber-400">
+            <span class="p-2 rounded-lg bg-amber-500/10 text-amber-500 dark:text-amber-400">
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
               </svg>
             </span>
-            <h3 class="font-bold text-base text-slate-100 dark:text-slate-100 light:text-slate-900">Security &amp; Validation</h3>
+            <h3 class="font-bold text-base text-slate-900 dark:text-slate-100">Security &amp; Validation</h3>
           </div>
           <div class="flex flex-wrap gap-2.5">
             <!-- JWT -->
-            <span class="tech-pill px-3 py-1.5 rounded-lg bg-slate-950/70 dark:bg-slate-950/70 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-xs font-mono text-slate-200 dark:text-slate-200 light:text-slate-800">
+            <span class="tech-pill px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-950/70 border border-slate-300 dark:border-slate-800 text-xs font-mono text-slate-800 dark:text-slate-200">
               <svg class="w-3.5 h-3.5 tech-icon" viewBox="0 0 24 24" fill="#D63AFF"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm-1 14.5h-2V13h2v3.5zm0-5h-2V7h2v4.5zm5 5h-2V7h2v9.5z"/></svg>
               <span>JWT</span>
             </span>
             <!-- RBAC -->
-            <span class="tech-pill px-3 py-1.5 rounded-lg bg-slate-950/70 dark:bg-slate-950/70 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-xs font-mono text-slate-200 dark:text-slate-200 light:text-slate-800">
+            <span class="tech-pill px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-950/70 border border-slate-300 dark:border-slate-800 text-xs font-mono text-slate-800 dark:text-slate-200">
               <svg class="w-3.5 h-3.5 tech-icon" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
               <span>RBAC</span>
             </span>
             <!-- Bcrypt -->
-            <span class="tech-pill px-3 py-1.5 rounded-lg bg-slate-950/70 dark:bg-slate-950/70 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-xs font-mono text-slate-200 dark:text-slate-200 light:text-slate-800">
+            <span class="tech-pill px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-950/70 border border-slate-300 dark:border-slate-800 text-xs font-mono text-slate-800 dark:text-slate-200">
               <svg class="w-3.5 h-3.5 tech-icon" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
               <span>Bcrypt</span>
             </span>
             <!-- SHA-256 -->
-            <span class="tech-pill px-3 py-1.5 rounded-lg bg-slate-950/70 dark:bg-slate-950/70 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-xs font-mono text-slate-200 dark:text-slate-200 light:text-slate-800">
+            <span class="tech-pill px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-950/70 border border-slate-300 dark:border-slate-800 text-xs font-mono text-slate-800 dark:text-slate-200">
               <svg class="w-3.5 h-3.5 tech-icon" viewBox="0 0 24 24" fill="none" stroke="#06B6D4" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
               <span>SHA-256</span>
             </span>
             <!-- Joi -->
-            <span class="tech-pill px-3 py-1.5 rounded-lg bg-slate-950/70 dark:bg-slate-950/70 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-xs font-mono text-slate-200 dark:text-slate-200 light:text-slate-800">
+            <span class="tech-pill px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-950/70 border border-slate-300 dark:border-slate-800 text-xs font-mono text-slate-800 dark:text-slate-200">
               <svg class="w-3.5 h-3.5 tech-icon" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
               <span>Joi</span>
             </span>
@@ -656,28 +665,28 @@
         </div>
 
         <!-- Category 6: Testing & Docs -->
-        <div class="p-6 rounded-2xl bg-slate-900/60 dark:bg-slate-900/60 light:bg-white border border-slate-800 dark:border-slate-800 light:border-slate-200 hover:border-brand-500/40 transition-all reveal-init delay-200">
+        <div class="p-6 rounded-2xl bg-white dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 shadow-lg dark:shadow-none hover:border-brand-500/40 transition-all reveal-init delay-200">
           <div class="flex items-center gap-3 mb-4">
-            <span class="p-2 rounded-lg bg-teal-500/10 text-teal-400">
+            <span class="p-2 rounded-lg bg-teal-500/10 text-teal-600 dark:text-teal-400">
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/>
               </svg>
             </span>
-            <h3 class="font-bold text-base text-slate-100 dark:text-slate-100 light:text-slate-900">Testing &amp; Docs</h3>
+            <h3 class="font-bold text-base text-slate-900 dark:text-slate-100">Testing &amp; Docs</h3>
           </div>
           <div class="flex flex-wrap gap-2.5">
             <!-- Vitest -->
-            <span class="tech-pill tech-pill-vitest px-3 py-1.5 rounded-lg bg-slate-950/70 dark:bg-slate-950/70 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-xs font-mono text-brand-400 dark:text-brand-400 light:text-brand-700 font-semibold">
+            <span class="tech-pill tech-pill-vitest px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-950/70 border border-slate-300 dark:border-slate-800 text-xs font-mono text-brand-600 dark:text-brand-400 font-semibold">
               <svg class="w-3.5 h-3.5 tech-icon" viewBox="0 0 24 24" fill="none"><path d="M17.5 2.5l-6 11.5h4.5l-7 8.5 2-8.5H6.5l6-11.5h5z" fill="#FCC72B"/><path d="M11.5 14L17.5 2.5h-5l-6 11.5h4.5l-2 8.5 7-8.5h-4.5z" fill="#729B1B" opacity="0.5"/></svg>
               <span>Vitest</span>
             </span>
             <!-- Postman -->
-            <span class="tech-pill tech-pill-postman px-3 py-1.5 rounded-lg bg-slate-950/70 dark:bg-slate-950/70 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-xs font-mono text-slate-200 dark:text-slate-200 light:text-slate-800">
+            <span class="tech-pill tech-pill-postman px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-950/70 border border-slate-300 dark:border-slate-800 text-xs font-mono text-slate-800 dark:text-slate-200">
               <svg class="w-3.5 h-3.5 tech-icon" viewBox="0 0 24 24" fill="#FF6C37"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 14.5l-4-4 1.41-1.41L13 13.67l5.59-5.59L20 9.5l-7 7z"/></svg>
               <span>Postman</span>
             </span>
             <!-- OpenAPI / Swagger -->
-            <span class="tech-pill px-3 py-1.5 rounded-lg bg-slate-950/70 dark:bg-slate-950/70 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-xs font-mono text-slate-200 dark:text-slate-200 light:text-slate-800">
+            <span class="tech-pill px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-950/70 border border-slate-300 dark:border-slate-800 text-xs font-mono text-slate-800 dark:text-slate-200">
               <svg class="w-3.5 h-3.5 tech-icon" viewBox="0 0 24 24" fill="#85EA2D"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 3c3.87 0 7 3.13 7 7s-3.13 7-7 7-7-3.13-7-7 3.13-7 7-7zm-1 3v2h2V8h-2zm0 4v4h2v-4h-2z"/></svg>
               <span>OpenAPI / Swagger</span>
             </span>
@@ -685,48 +694,48 @@
         </div>
 
         <!-- Category 7: Tools & Cloud Infrastructure -->
-        <div class="p-6 rounded-2xl bg-slate-900/60 dark:bg-slate-900/60 light:bg-white border border-slate-800 dark:border-slate-800 light:border-slate-200 hover:border-brand-500/40 transition-all md:col-span-2 lg:col-span-3 reveal-init">
+        <div class="p-6 rounded-2xl bg-white dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 shadow-lg dark:shadow-none hover:border-brand-500/40 transition-all md:col-span-2 lg:col-span-3 reveal-init">
           <div class="flex items-center gap-3 mb-4">
-            <span class="p-2 rounded-lg bg-blue-500/10 text-blue-400">
+            <span class="p-2 rounded-lg bg-blue-500/10 text-blue-500 dark:text-blue-400">
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 00-9.78 2.096A4.001 4.001 0 003 15z"/>
               </svg>
             </span>
-            <h3 class="font-bold text-base text-slate-100 dark:text-slate-100 light:text-slate-900">Tools &amp; Cloud Infrastructure</h3>
+            <h3 class="font-bold text-base text-slate-900 dark:text-slate-100">Tools &amp; Cloud Infrastructure</h3>
           </div>
           <div class="flex flex-wrap gap-2.5">
             <!-- Docker -->
-            <span class="tech-pill tech-pill-docker px-3 py-1.5 rounded-lg bg-slate-950/70 dark:bg-slate-950/70 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-xs font-mono text-slate-200 dark:text-slate-200 light:text-slate-800">
+            <span class="tech-pill tech-pill-docker px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-950/70 border border-slate-300 dark:border-slate-800 text-xs font-mono text-slate-800 dark:text-slate-200">
               <svg class="w-3.5 h-3.5 tech-icon" viewBox="0 0 24 24" fill="#2496ED"><path d="M13 8h2v2h-2V8zm-3 0h2v2h-2V8zm-3 0h2v2H7V8zm6-3h2v2h-2V5zm-3 0h2v2h-2V5zm-3 0h2v2H7V5zm6-3h2v2h-2V2zm-3 0h2v2h-2V2zm11 10.2c-.4-.3-1.5-.4-2.3.1-.3-.6-.8-1.1-1.5-1.3-.1 0-.3-.1-.4-.1-.1 0-.3 0-.4.1-.4.2-.7.6-.8 1-.6-.2-1.3-.2-1.9 0v-4H4v4c-1.3.4-2.3 1.4-2.8 2.7-.4 1-.2 2.2.4 3.1 1.4 2 3.8 3.2 6.4 3.2 6.5 0 11.8-4.5 12.8-10.8.2.1.4.1.6.1 1.1 0 2-.6 2.5-1.5-.3.1-.6.2-.9.2-.5 0-.9-.1-1.4-.4z"/></svg>
               <span>Docker</span>
             </span>
             <!-- Git -->
-            <span class="tech-pill tech-pill-git px-3 py-1.5 rounded-lg bg-slate-950/70 dark:bg-slate-950/70 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-xs font-mono text-slate-200 dark:text-slate-200 light:text-slate-800">
+            <span class="tech-pill tech-pill-git px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-950/70 border border-slate-300 dark:border-slate-800 text-xs font-mono text-slate-800 dark:text-slate-200">
               <svg class="w-3.5 h-3.5 tech-icon" viewBox="0 0 24 24" fill="#F05032"><path d="M21.6 10.9L13.1 2.4a1.8 1.8 0 00-2.5 0L8.8 4.2l3.2 3.2a2.1 2.1 0 012.7 2.7l3.1 3.1a2.1 2.1 0 011.5 3.3 2.1 2.1 0 01-3.3-1.5l-3-3v4.6a2.1 2.1 0 01.8 1.7 2.1 2.1 0 01-4.2 0 2.1 2.1 0 011.4-2v-4.8a2.1 2.1 0 01-1.1-1.1L6.7 13.6a2.1 2.1 0 11-1.3-1.3l3.2-3.2L2.4 15.3a1.8 1.8 0 000 2.5l8.5 8.5a1.8 1.8 0 002.5 0l8.2-8.2a1.8 1.8 0 000-2.5z"/></svg>
               <span>Git</span>
             </span>
             <!-- GitHub -->
-            <span class="tech-pill px-3 py-1.5 rounded-lg bg-slate-950/70 dark:bg-slate-950/70 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-xs font-mono text-slate-200 dark:text-slate-200 light:text-slate-800">
+            <span class="tech-pill px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-950/70 border border-slate-300 dark:border-slate-800 text-xs font-mono text-slate-800 dark:text-slate-200">
               <svg class="w-3.5 h-3.5 tech-icon" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
               <span>GitHub</span>
             </span>
             <!-- Railway -->
-            <span class="tech-pill px-3 py-1.5 rounded-lg bg-slate-950/70 dark:bg-slate-950/70 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-xs font-mono text-slate-200 dark:text-slate-200 light:text-slate-800">
+            <span class="tech-pill px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-950/70 border border-slate-300 dark:border-slate-800 text-xs font-mono text-slate-800 dark:text-slate-200">
               <svg class="w-3.5 h-3.5 tech-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M2.5 19h19c.3 0 .5-.2.5-.5v-4.6c0-.8-.7-1.4-1.5-1.4H3.5c-.8 0-1.5.6-1.5 1.4v4.6c0 .3.2.5.5.5zm1.5-5h16v3H4v-3zm15.5-3.5c.8 0 1.5-.6 1.5-1.4V4.5c0-.3-.2-.5-.5-.5H3.5c-.8 0-1.5.6-1.5 1.4v4.6c0 .3.2.5.5.5h15.5zm-.5-5h-15v3h15V5.5z"/></svg>
               <span>Railway</span>
             </span>
             <!-- Vercel -->
-            <span class="tech-pill px-3 py-1.5 rounded-lg bg-slate-950/70 dark:bg-slate-950/70 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-xs font-mono text-slate-200 dark:text-slate-200 light:text-slate-800">
+            <span class="tech-pill px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-950/70 border border-slate-300 dark:border-slate-800 text-xs font-mono text-slate-800 dark:text-slate-200">
               <svg class="w-3.5 h-3.5 tech-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L24 22H0L12 1z"/></svg>
               <span>Vercel</span>
             </span>
             <!-- Stripe API & Webhooks -->
-            <span class="tech-pill tech-pill-stripe px-3 py-1.5 rounded-lg bg-slate-950/70 dark:bg-slate-950/70 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-xs font-mono text-brand-400 dark:text-brand-400 light:text-brand-700 font-semibold">
+            <span class="tech-pill tech-pill-stripe px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-950/70 border border-slate-300 dark:border-slate-800 text-xs font-mono text-brand-600 dark:text-brand-400 font-semibold">
               <svg class="w-3.5 h-3.5 tech-icon" viewBox="0 0 24 24" fill="#635BFF"><path d="M13.976 9.15c-2.172-.806-3.356-1.426-3.356-2.409 0-.831.683-1.305 1.901-1.305 2.227 0 4.515.858 6.09 1.631l.89-5.494C18.252.975 15.697 0 12.165 0 9.667 0 7.589.654 6.104 1.872 4.56 3.147 3.757 4.992 3.757 7.218c0 4.839 3.771 6.491 6.861 7.607 2.502.907 3.395 1.606 3.395 2.588 0 .973-.804 1.545-2.227 1.545-2.201 0-5.114-1.077-7.073-2.193l-.92 5.581C5.398 23.3 8.358 24 11.758 24c2.617 0 4.79-.675 6.321-1.928 1.603-1.307 2.42-3.21 2.42-5.556 0-4.992-3.83-6.568-6.523-7.366z"/></svg>
               <span>Stripe API &amp; Webhooks</span>
             </span>
             <!-- Cloudinary -->
-            <span class="tech-pill px-3 py-1.5 rounded-lg bg-slate-950/70 dark:bg-slate-950/70 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-xs font-mono text-slate-200 dark:text-slate-200 light:text-slate-800">
+            <span class="tech-pill px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-950/70 border border-slate-300 dark:border-slate-800 text-xs font-mono text-slate-800 dark:text-slate-200">
               <svg class="w-3.5 h-3.5 tech-icon" viewBox="0 0 24 24" fill="#3448C5"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"/></svg>
               <span>Cloudinary</span>
             </span>
@@ -739,111 +748,111 @@
     <!-- =======================================================================
          EXPERIENCE SECTION (Timeline With SVG Tech Badges)
          ======================================================================= -->
-    <section id="experience" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 border-t border-slate-800/60 dark:border-slate-800/60 light:border-slate-200">
+    <section id="experience" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 border-t border-slate-200 dark:border-slate-800/60">
       
       <!-- Section Header -->
       <div class="space-y-2 mb-12 reveal-init">
-        <p class="font-mono text-xs uppercase tracking-widest text-brand-400">// 03. CAREER &amp; APPRENTICESHIP</p>
-        <h2 class="text-3xl sm:text-4xl font-bold text-slate-100 dark:text-slate-100 light:text-slate-900 tracking-tight">Work Experience</h2>
-        <p class="text-slate-400 dark:text-slate-400 light:text-slate-600 text-sm max-w-xl">
+        <p class="font-mono text-xs uppercase tracking-widest text-brand-600 dark:text-brand-400">// 03. CAREER &amp; APPRENTICESHIP</p>
+        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-slate-100 tracking-tight">Work Experience</h2>
+        <p class="text-slate-600 dark:text-slate-400 text-sm max-w-xl">
           Engineering backend architectures, background queues, and reliable API services.
         </p>
       </div>
 
       <!-- Experience Timeline Container -->
-      <div class="relative pl-6 sm:pl-8 border-l-2 border-slate-800 dark:border-slate-800 light:border-slate-300 ml-2 sm:ml-4 space-y-12">
+      <div class="relative pl-6 sm:pl-8 border-l-2 border-slate-300 dark:border-slate-800 ml-2 sm:ml-4 space-y-12">
         
         <!-- Timeline Item 1: Outscalers -->
         <div class="relative group reveal-init">
           
           <!-- Node Dot -->
-          <div class="absolute -left-[31px] sm:-left-[39px] top-1.5 w-4 h-4 rounded-full bg-slate-950 dark:bg-slate-950 light:bg-white border-2 border-brand-500 group-hover:scale-125 transition-transform shadow-md shadow-brand-500/50">
-            <span class="w-1.5 h-1.5 rounded-full bg-brand-400 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></span>
+          <div class="absolute -left-[31px] sm:-left-[39px] top-1.5 w-4 h-4 rounded-full bg-white dark:bg-slate-950 border-2 border-brand-500 group-hover:scale-125 transition-transform shadow-md shadow-brand-500/50">
+            <span class="w-1.5 h-1.5 rounded-full bg-brand-500 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></span>
           </div>
 
           <!-- Card Content -->
-          <div class="p-6 sm:p-8 rounded-2xl bg-slate-900/70 dark:bg-slate-900/70 light:bg-white border border-slate-800 dark:border-slate-800 light:border-slate-200 shadow-xl space-y-4">
+          <div class="p-6 sm:p-8 rounded-2xl bg-white dark:bg-slate-900/70 border border-slate-200 dark:border-slate-800 shadow-xl space-y-4">
             
             <!-- Header: Role, Company & Date -->
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-800 dark:border-slate-800 light:border-slate-200 pb-4">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 dark:border-slate-800 pb-4">
               <div>
-                <h3 class="text-lg sm:text-xl font-bold text-slate-100 dark:text-slate-100 light:text-slate-900">
+                <h3 class="text-lg sm:text-xl font-bold text-slate-900 dark:text-slate-100">
                   Backend Developer Apprentice / Intern
                 </h3>
-                <div class="text-sm font-medium text-brand-400 dark:text-brand-400 light:text-brand-600 flex items-center gap-2 mt-0.5">
+                <div class="text-sm font-medium text-brand-600 dark:text-brand-400 flex items-center gap-2 mt-0.5">
                   <span>Outscalers (Pvt) Ltd</span>
-                  <span class="text-slate-600 dark:text-slate-600 light:text-slate-400">•</span>
-                  <span class="text-slate-400 dark:text-slate-400 light:text-slate-500 font-normal">Rawalpindi, Pakistan</span>
+                  <span class="text-slate-400 dark:text-slate-600">•</span>
+                  <span class="text-slate-500 dark:text-slate-400 font-normal">Rawalpindi, Pakistan</span>
                 </div>
               </div>
-              <div class="font-mono text-xs font-semibold px-3 py-1.5 rounded-full bg-slate-950 dark:bg-slate-950 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-slate-300 dark:text-slate-300 light:text-slate-700 w-fit">
+              <div class="font-mono text-xs font-semibold px-3 py-1.5 rounded-full bg-slate-100 dark:bg-slate-950 border border-slate-300 dark:border-slate-800 text-slate-700 dark:text-slate-300 w-fit">
                 Jun 2026 – Aug 2026
               </div>
             </div>
 
             <!-- Bullet Points (Verbatim Content) -->
-            <ul class="space-y-3 text-slate-300 dark:text-slate-300 light:text-slate-700 text-sm sm:text-base leading-relaxed">
+            <ul class="space-y-3 text-slate-700 dark:text-slate-300 text-sm sm:text-base leading-relaxed">
               <li class="flex items-start gap-3">
-                <span class="text-brand-400 font-mono mt-1 text-xs">▹</span>
+                <span class="text-brand-500 font-mono mt-1 text-xs">▹</span>
                 <span>Engineered modular RESTful APIs with Node.js and Express.js, applying MVC and OOP design patterns.</span>
               </li>
               <li class="flex items-start gap-3">
-                <span class="text-brand-400 font-mono mt-1 text-xs">▹</span>
+                <span class="text-brand-500 font-mono mt-1 text-xs">▹</span>
                 <span>Implemented JWT authentication, Bcrypt password hashing, and SHA-256 encryption to secure user data.</span>
               </li>
               <li class="flex items-start gap-3">
-                <span class="text-brand-400 font-mono mt-1 text-xs">▹</span>
+                <span class="text-brand-500 font-mono mt-1 text-xs">▹</span>
                 <span>Built BullMQ and Redis background worker pipelines for scheduled cron jobs and automated reminder emails.</span>
               </li>
               <li class="flex items-start gap-3">
-                <span class="text-brand-400 font-mono mt-1 text-xs">▹</span>
+                <span class="text-brand-500 font-mono mt-1 text-xs">▹</span>
                 <span>Integrated Redis caching to reduce database read latency and increase API throughput.</span>
               </li>
               <li class="flex items-start gap-3">
-                <span class="text-brand-400 font-mono mt-1 text-xs">▹</span>
+                <span class="text-brand-500 font-mono mt-1 text-xs">▹</span>
                 <span>Configured Stripe Checkout with cryptographic webhook verification to automate order workflows.</span>
               </li>
               <li class="flex items-start gap-3">
-                <span class="text-brand-400 font-mono mt-1 text-xs">▹</span>
+                <span class="text-brand-500 font-mono mt-1 text-xs">▹</span>
                 <span>Enforced request validation using Joi schemas and authored interactive OpenAPI (Swagger) documentation.</span>
               </li>
               <li class="flex items-start gap-3">
-                <span class="text-brand-400 font-mono mt-1 text-xs">▹</span>
+                <span class="text-brand-500 font-mono mt-1 text-xs">▹</span>
                 <span>Achieved high code reliability through Vitest unit/E2E test suites and Postman API testing.</span>
               </li>
             </ul>
 
             <!-- Tech Pills Footer with SVGs & Micro-Interactions -->
-            <div class="pt-4 border-t border-slate-800/80 dark:border-slate-800/80 light:border-slate-200 flex flex-wrap gap-2">
-              <span class="tech-pill tech-pill-node px-2.5 py-1 rounded bg-slate-950 dark:bg-slate-950 light:bg-slate-100 text-[11px] font-mono text-slate-300 dark:text-slate-300 light:text-slate-700 border border-slate-800/80">
+            <div class="pt-4 border-t border-slate-200 dark:border-slate-800/80 flex flex-wrap gap-2">
+              <span class="tech-pill tech-pill-node px-2.5 py-1 rounded bg-slate-100 dark:bg-slate-950 text-[11px] font-mono text-slate-700 dark:text-slate-300 border border-slate-300 dark:border-slate-800/80">
                 <svg class="w-3 h-3 tech-icon" viewBox="0 0 24 24" fill="#5FA04E"><path d="M12 2l9.5 5.5v11L12 24l-9.5-5.5v-11L12 2zm0 2.3L4.5 8.6v8.8L12 21.7l7.5-4.3V8.6L12 4.3z"/></svg>
                 <span>Node.js</span>
               </span>
-              <span class="tech-pill px-2.5 py-1 rounded bg-slate-950 dark:bg-slate-950 light:bg-slate-100 text-[11px] font-mono text-slate-300 dark:text-slate-300 light:text-slate-700 border border-slate-800/80">
+              <span class="tech-pill px-2.5 py-1 rounded bg-slate-100 dark:bg-slate-950 text-[11px] font-mono text-slate-700 dark:text-slate-300 border border-slate-300 dark:border-slate-800/80">
                 <svg class="w-3 h-3 tech-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
                 <span>Express.js</span>
               </span>
-              <span class="tech-pill tech-pill-redis px-2.5 py-1 rounded bg-slate-950 dark:bg-slate-950 light:bg-slate-100 text-[11px] font-mono text-slate-300 dark:text-slate-300 light:text-slate-700 border border-slate-800/80">
+              <span class="tech-pill tech-pill-redis px-2.5 py-1 rounded bg-slate-100 dark:bg-slate-950 text-[11px] font-mono text-slate-700 dark:text-slate-300 border border-slate-300 dark:border-slate-800/80">
                 <svg class="w-3 h-3 tech-icon" viewBox="0 0 24 24" fill="#DC382D"><path d="M21.5 6.5l-9.5-4.5-9.5 4.5 9.5 4.5 9.5-4.5zm-9.5 6.5l-9.5-4.5v5l9.5 4.5 9.5-4.5v-5l-9.5 4.5z"/></svg>
                 <span>Redis</span>
               </span>
-              <span class="tech-pill px-2.5 py-1 rounded bg-slate-950 dark:bg-slate-950 light:bg-slate-100 text-[11px] font-mono text-slate-300 dark:text-slate-300 light:text-slate-700 border border-slate-800/80">
+              <span class="tech-pill px-2.5 py-1 rounded bg-slate-100 dark:bg-slate-950 text-[11px] font-mono text-slate-700 dark:text-slate-300 border border-slate-300 dark:border-slate-800/80">
                 <svg class="w-3 h-3 tech-icon" viewBox="0 0 24 24" fill="none" stroke="#E11D48" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
                 <span>BullMQ</span>
               </span>
-              <span class="tech-pill px-2.5 py-1 rounded bg-slate-950 dark:bg-slate-950 light:bg-slate-100 text-[11px] font-mono text-slate-300 dark:text-slate-300 light:text-slate-700 border border-slate-800/80">
+              <span class="tech-pill px-2.5 py-1 rounded bg-slate-100 dark:bg-slate-950 text-[11px] font-mono text-slate-700 dark:text-slate-300 border border-slate-300 dark:border-slate-800/80">
                 <svg class="w-3 h-3 tech-icon" viewBox="0 0 24 24" fill="#D63AFF"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm-1 14.5h-2V13h2v3.5zm0-5h-2V7h2v4.5zm5 5h-2V7h2v9.5z"/></svg>
                 <span>JWT / Bcrypt</span>
               </span>
-              <span class="tech-pill tech-pill-stripe px-2.5 py-1 rounded bg-slate-950 dark:bg-slate-950 light:bg-slate-100 text-[11px] font-mono text-slate-300 dark:text-slate-300 light:text-slate-700 border border-slate-800/80">
+              <span class="tech-pill tech-pill-stripe px-2.5 py-1 rounded bg-slate-100 dark:bg-slate-950 text-[11px] font-mono text-slate-700 dark:text-slate-300 border border-slate-300 dark:border-slate-800/80">
                 <svg class="w-3 h-3 tech-icon" viewBox="0 0 24 24" fill="#635BFF"><path d="M13.976 9.15c-2.172-.806-3.356-1.426-3.356-2.409 0-.831.683-1.305 1.901-1.305 2.227 0 4.515.858 6.09 1.631l.89-5.494C18.252.975 15.697 0 12.165 0 9.667 0 7.589.654 6.104 1.872 4.56 3.147 3.757 4.992 3.757 7.218z"/></svg>
                 <span>Stripe Webhooks</span>
               </span>
-              <span class="tech-pill tech-pill-vitest px-2.5 py-1 rounded bg-slate-950 dark:bg-slate-950 light:bg-slate-100 text-[11px] font-mono text-slate-300 dark:text-slate-300 light:text-slate-700 border border-slate-800/80">
+              <span class="tech-pill tech-pill-vitest px-2.5 py-1 rounded bg-slate-100 dark:bg-slate-950 text-[11px] font-mono text-slate-700 dark:text-slate-300 border border-slate-300 dark:border-slate-800/80">
                 <svg class="w-3 h-3 tech-icon" viewBox="0 0 24 24" fill="#FCC72B"><path d="M17.5 2.5l-6 11.5h4.5l-7 8.5 2-8.5H6.5l6-11.5h5z"/></svg>
                 <span>Vitest</span>
               </span>
-              <span class="tech-pill px-2.5 py-1 rounded bg-slate-950 dark:bg-slate-950 light:bg-slate-100 text-[11px] font-mono text-slate-300 dark:text-slate-300 light:text-slate-700 border border-slate-800/80">
+              <span class="tech-pill px-2.5 py-1 rounded bg-slate-100 dark:bg-slate-950 text-[11px] font-mono text-slate-700 dark:text-slate-300 border border-slate-300 dark:border-slate-800/80">
                 <svg class="w-3 h-3 tech-icon" viewBox="0 0 24 24" fill="#85EA2D"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 3c3.87 0 7 3.13 7 7s-3.13 7-7 7-7-3.13-7-7 3.13-7 7-7z"/></svg>
                 <span>Swagger</span>
               </span>
@@ -858,13 +867,13 @@
     <!-- =======================================================================
          PROJECTS SECTION (With Tech Logos & Micro-Animations)
          ======================================================================= -->
-    <section id="projects" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 border-t border-slate-800/60 dark:border-slate-800/60 light:border-slate-200">
+    <section id="projects" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 border-t border-slate-200 dark:border-slate-800/60">
       
       <!-- Section Header -->
       <div class="space-y-2 mb-12 reveal-init">
-        <p class="font-mono text-xs uppercase tracking-widest text-brand-400">// 04. FEATURED SYSTEMS</p>
-        <h2 class="text-3xl sm:text-4xl font-bold text-slate-100 dark:text-slate-100 light:text-slate-900 tracking-tight">Featured Projects</h2>
-        <p class="text-slate-400 dark:text-slate-400 light:text-slate-600 text-sm max-w-xl">
+        <p class="font-mono text-xs uppercase tracking-widest text-brand-600 dark:text-brand-400">// 04. FEATURED SYSTEMS</p>
+        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-slate-100 tracking-tight">Featured Projects</h2>
+        <p class="text-slate-600 dark:text-slate-400 text-sm max-w-xl">
           Real-world, multi-tenant, and high-performance backend systems with live deployments and open source repositories.
         </p>
       </div>
@@ -873,85 +882,85 @@
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
 
         <!-- Project 1: AppointFlow -->
-        <div class="flex flex-col justify-between p-6 sm:p-7 rounded-2xl bg-slate-900/70 dark:bg-slate-900/70 light:bg-white border border-slate-800 dark:border-slate-800 light:border-slate-200 hover:border-brand-500/50 hover:shadow-2xl hover:shadow-brand-500/10 transition-all reveal-init">
+        <div class="flex flex-col justify-between p-6 sm:p-7 rounded-2xl bg-white dark:bg-slate-900/70 border border-slate-200 dark:border-slate-800 hover:border-brand-500/50 hover:shadow-2xl hover:shadow-brand-500/10 transition-all reveal-init">
           <div class="space-y-4">
             
             <!-- Project Top Bar -->
             <div class="flex items-center justify-between">
-              <span class="font-mono text-xs font-semibold text-brand-400 bg-brand-500/10 border border-brand-500/20 px-2.5 py-1 rounded-md">
+              <span class="font-mono text-xs font-semibold text-brand-600 dark:text-brand-400 bg-brand-500/10 border border-brand-500/20 px-2.5 py-1 rounded-md">
                 SaaS Architecture
               </span>
               <div class="flex items-center gap-2">
-                <a href="https://github.com/hammadasdfg6-glitch/appointment-booking-saas" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-slate-100 p-1 rounded transition-colors" aria-label="AppointFlow GitHub Repository">
+                <a href="https://github.com/hammadasdfg6-glitch/appointment-booking-saas" target="_blank" rel="noopener noreferrer" class="text-slate-600 dark:text-slate-400 hover:text-slate-950 dark:hover:text-slate-100 p-1 rounded transition-colors" aria-label="AppointFlow GitHub Repository">
                   <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
                 </a>
-                <a href="https://appointment-booking-saas.vercel.app/" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-brand-400 p-1 rounded transition-colors" aria-label="AppointFlow Live Application">
+                <a href="https://appointment-booking-saas.vercel.app/" target="_blank" rel="noopener noreferrer" class="text-slate-600 dark:text-slate-400 hover:text-brand-600 dark:hover:text-brand-400 p-1 rounded transition-colors" aria-label="AppointFlow Live Application">
                   <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
                 </a>
               </div>
             </div>
 
             <!-- Title -->
-            <h3 class="text-xl font-bold text-slate-100 dark:text-slate-100 light:text-slate-900">
+            <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100">
               AppointFlow — Multi-Tenant Appointment Booking SaaS
             </h3>
 
             <!-- Tech Stack Pills with Logos -->
             <div class="flex flex-wrap gap-1.5 pt-1">
-              <span class="tech-pill text-[11px] font-mono px-2 py-0.5 rounded bg-slate-950 dark:bg-slate-950 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-slate-300 dark:text-slate-300 light:text-slate-700">
+              <span class="tech-pill text-[11px] font-mono px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-950 border border-slate-300 dark:border-slate-800 text-slate-700 dark:text-slate-300">
                 <svg class="w-3 h-3 tech-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 17.568l-6.802-9.671V17h-1.625V6.75h1.569l6.985 9.948v-9.948h1.625v10.818h-1.752z"/></svg>
                 <span>Next.js 16</span>
               </span>
-              <span class="tech-pill tech-pill-react text-[11px] font-mono px-2 py-0.5 rounded bg-slate-950 dark:bg-slate-950 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-slate-300 dark:text-slate-300 light:text-slate-700">
+              <span class="tech-pill tech-pill-react text-[11px] font-mono px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-950 border border-slate-300 dark:border-slate-800 text-slate-700 dark:text-slate-300">
                 <svg class="w-3 h-3 tech-icon" viewBox="0 0 24 24" fill="none" stroke="#61DAFB" stroke-width="1.5"><circle cx="12" cy="12" r="2" fill="#61DAFB"/><ellipse cx="12" cy="12" rx="10" ry="4.5"/><ellipse cx="12" cy="12" rx="10" ry="4.5" transform="rotate(60 12 12)"/></svg>
                 <span>React</span>
               </span>
-              <span class="tech-pill tech-pill-node text-[11px] font-mono px-2 py-0.5 rounded bg-slate-950 dark:bg-slate-950 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-brand-400 font-medium">
+              <span class="tech-pill tech-pill-node text-[11px] font-mono px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-950 border border-slate-300 dark:border-slate-800 text-brand-600 dark:text-brand-400 font-medium">
                 <svg class="w-3 h-3 tech-icon" viewBox="0 0 24 24" fill="#5FA04E"><path d="M12 2l9.5 5.5v11L12 24l-9.5-5.5v-11L12 2z"/></svg>
                 <span>Node.js</span>
               </span>
-              <span class="tech-pill text-[11px] font-mono px-2 py-0.5 rounded bg-slate-950 dark:bg-slate-950 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-slate-300 dark:text-slate-300 light:text-slate-700">
+              <span class="tech-pill text-[11px] font-mono px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-950 border border-slate-300 dark:border-slate-800 text-slate-700 dark:text-slate-300">
                 <span>Express</span>
               </span>
-              <span class="tech-pill tech-pill-mongo text-[11px] font-mono px-2 py-0.5 rounded bg-slate-950 dark:bg-slate-950 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-slate-300 dark:text-slate-300 light:text-slate-700">
+              <span class="tech-pill tech-pill-mongo text-[11px] font-mono px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-950 border border-slate-300 dark:border-slate-800 text-slate-700 dark:text-slate-300">
                 <svg class="w-3 h-3 tech-icon" viewBox="0 0 24 24" fill="#47A248"><path d="M12 1.5C12 1.5 5.5 8.5 5.5 13.5C5.5 17.5 8.5 21 12 22.5C15.5 21 18.5 17.5 18.5 13.5C18.5 8.5 12 1.5 12 1.5Z"/></svg>
                 <span>MongoDB</span>
               </span>
-              <span class="tech-pill tech-pill-redis text-[11px] font-mono px-2 py-0.5 rounded bg-slate-950 dark:bg-slate-950 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-accent-cyan font-medium">
+              <span class="tech-pill tech-pill-redis text-[11px] font-mono px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-950 border border-slate-300 dark:border-slate-800 text-accent-cyan font-medium">
                 <svg class="w-3 h-3 tech-icon" viewBox="0 0 24 24" fill="#DC382D"><path d="M21.5 6.5l-9.5-4.5-9.5 4.5 9.5 4.5 9.5-4.5zm-9.5 6.5l-9.5-4.5v5l9.5 4.5 9.5-4.5v-5l-9.5 4.5z"/></svg>
                 <span>Redis</span>
               </span>
-              <span class="tech-pill text-[11px] font-mono px-2 py-0.5 rounded bg-slate-950 dark:bg-slate-950 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-slate-300 dark:text-slate-300 light:text-slate-700">
+              <span class="tech-pill text-[11px] font-mono px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-950 border border-slate-300 dark:border-slate-800 text-slate-700 dark:text-slate-300">
                 <svg class="w-3 h-3 tech-icon" viewBox="0 0 24 24" fill="none" stroke="#E11D48" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
                 <span>BullMQ</span>
               </span>
-              <span class="tech-pill tech-pill-stripe text-[11px] font-mono px-2 py-0.5 rounded bg-slate-950 dark:bg-slate-950 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-slate-300 dark:text-slate-300 light:text-slate-700">
+              <span class="tech-pill tech-pill-stripe text-[11px] font-mono px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-950 border border-slate-300 dark:border-slate-800 text-slate-700 dark:text-slate-300">
                 <svg class="w-3 h-3 tech-icon" viewBox="0 0 24 24" fill="#635BFF"><path d="M13.976 9.15c-2.172-.806-3.356-1.426-3.356-2.409 0-.831.683-1.305 1.901-1.305 2.227 0 4.515.858 6.09 1.631l.89-5.494C18.252.975 15.697 0 12.165 0z"/></svg>
                 <span>Stripe</span>
               </span>
-              <span class="tech-pill text-[11px] font-mono px-2 py-0.5 rounded bg-slate-950 dark:bg-slate-950 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-slate-300 dark:text-slate-300 light:text-slate-700">
+              <span class="tech-pill text-[11px] font-mono px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-950 border border-slate-300 dark:border-slate-800 text-slate-700 dark:text-slate-300">
                 <span>JWT</span>
               </span>
-              <span class="tech-pill text-[11px] font-mono px-2 py-0.5 rounded bg-slate-950 dark:bg-slate-950 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-slate-300 dark:text-slate-300 light:text-slate-700">
+              <span class="tech-pill text-[11px] font-mono px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-950 border border-slate-300 dark:border-slate-800 text-slate-700 dark:text-slate-300">
                 <span>Railway</span>
               </span>
-              <span class="tech-pill text-[11px] font-mono px-2 py-0.5 rounded bg-slate-950 dark:bg-slate-950 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-slate-300 dark:text-slate-300 light:text-slate-700">
+              <span class="tech-pill text-[11px] font-mono px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-950 border border-slate-300 dark:border-slate-800 text-slate-700 dark:text-slate-300">
                 <span>Vercel</span>
               </span>
             </div>
 
             <!-- Highlights (Verbatim) -->
-            <ul class="space-y-2.5 text-xs text-slate-300 dark:text-slate-300 light:text-slate-600 leading-relaxed pt-2">
+            <ul class="space-y-2.5 text-xs text-slate-600 dark:text-slate-300 leading-relaxed pt-2">
               <li class="flex items-start gap-2">
-                <span class="text-brand-400 font-mono text-xs">▹</span>
+                <span class="text-brand-500 font-mono text-xs">▹</span>
                 <span>Architected multi-tenant data isolation with granular RBAC for Owner, Staff, and Customer roles.</span>
               </li>
               <li class="flex items-start gap-2">
-                <span class="text-brand-400 font-mono text-xs">▹</span>
+                <span class="text-brand-500 font-mono text-xs">▹</span>
                 <span>Implemented Stripe Checkout and webhooks with Redis distributed hold-locks to prevent booking race conditions.</span>
               </li>
               <li class="flex items-start gap-2">
-                <span class="text-brand-400 font-mono text-xs">▹</span>
+                <span class="text-brand-500 font-mono text-xs">▹</span>
                 <span>Built BullMQ workers for 24-hour appointment reminders, weekly analytics, and automated slot allocation.</span>
               </li>
             </ul>
@@ -959,12 +968,12 @@
           </div>
 
           <!-- Card Action Links -->
-          <div class="pt-6 mt-6 border-t border-slate-800/80 dark:border-slate-800/80 light:border-slate-200 flex items-center gap-3">
+          <div class="pt-6 mt-6 border-t border-slate-200 dark:border-slate-800/80 flex items-center gap-3">
             <a href="https://appointment-booking-saas.vercel.app/" target="_blank" rel="noopener noreferrer" class="flex-1 inline-flex items-center justify-center gap-2 py-2 rounded-lg bg-brand-500 hover:bg-brand-400 text-slate-950 font-semibold text-xs transition-colors">
               <span>Live Demo</span>
               <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
             </a>
-            <a href="https://github.com/hammadasdfg6-glitch/appointment-booking-saas" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg border border-slate-700 dark:border-slate-700 light:border-slate-300 hover:border-slate-500 text-slate-300 dark:text-slate-300 light:text-slate-700 text-xs font-medium transition-colors">
+            <a href="https://github.com/hammadasdfg6-glitch/appointment-booking-saas" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg border border-slate-300 dark:border-slate-700 hover:border-slate-500 text-slate-700 dark:text-slate-300 hover:text-slate-950 dark:hover:text-slate-100 text-xs font-medium transition-colors">
               <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
               <span>GitHub</span>
             </a>
@@ -972,7 +981,7 @@
         </div>
 
         <!-- Project 2: HM Sports -->
-        <div class="flex flex-col justify-between p-6 sm:p-7 rounded-2xl bg-slate-900/70 dark:bg-slate-900/70 light:bg-white border border-slate-800 dark:border-slate-800 light:border-slate-200 hover:border-brand-500/50 hover:shadow-2xl hover:shadow-brand-500/10 transition-all reveal-init delay-100">
+        <div class="flex flex-col justify-between p-6 sm:p-7 rounded-2xl bg-white dark:bg-slate-900/70 border border-slate-200 dark:border-slate-800 hover:border-brand-500/50 hover:shadow-2xl hover:shadow-brand-500/10 transition-all reveal-init delay-100">
           <div class="space-y-4">
             
             <!-- Project Top Bar -->
@@ -981,75 +990,75 @@
                 E-Commerce Backend
               </span>
               <div class="flex items-center gap-2">
-                <a href="https://github.com/hammadasdfg6-glitch/ICT-project" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-slate-100 p-1 rounded transition-colors" aria-label="HM Sports GitHub Repository">
+                <a href="https://github.com/hammadasdfg6-glitch/ICT-project" target="_blank" rel="noopener noreferrer" class="text-slate-600 dark:text-slate-400 hover:text-slate-950 dark:hover:text-slate-100 p-1 rounded transition-colors" aria-label="HM Sports GitHub Repository">
                   <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
                 </a>
-                <a href="https://ict-project-ays9123.vercel.app/" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-brand-400 p-1 rounded transition-colors" aria-label="HM Sports Live Application">
+                <a href="https://ict-project-ays9123.vercel.app/" target="_blank" rel="noopener noreferrer" class="text-slate-600 dark:text-slate-400 hover:text-brand-600 dark:hover:text-brand-400 p-1 rounded transition-colors" aria-label="HM Sports Live Application">
                   <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
                 </a>
               </div>
             </div>
 
             <!-- Title -->
-            <h3 class="text-xl font-bold text-slate-100 dark:text-slate-100 light:text-slate-900">
+            <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100">
               HM Sports — E-Commerce &amp; Inventory Platform
             </h3>
 
             <!-- Tech Stack Pills with Logos -->
             <div class="flex flex-wrap gap-1.5 pt-1">
-              <span class="tech-pill tech-pill-node text-[11px] font-mono px-2 py-0.5 rounded bg-slate-950 dark:bg-slate-950 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-brand-400 font-medium">
+              <span class="tech-pill tech-pill-node text-[11px] font-mono px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-950 border border-slate-300 dark:border-slate-800 text-brand-600 dark:text-brand-400 font-medium">
                 <svg class="w-3 h-3 tech-icon" viewBox="0 0 24 24" fill="#5FA04E"><path d="M12 2l9.5 5.5v11L12 24l-9.5-5.5v-11L12 2z"/></svg>
                 <span>Node.js</span>
               </span>
-              <span class="tech-pill text-[11px] font-mono px-2 py-0.5 rounded bg-slate-950 dark:bg-slate-950 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-slate-300 dark:text-slate-300 light:text-slate-700">
+              <span class="tech-pill text-[11px] font-mono px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-950 border border-slate-300 dark:border-slate-800 text-slate-700 dark:text-slate-300">
                 <span>Express</span>
               </span>
-              <span class="tech-pill tech-pill-mongo text-[11px] font-mono px-2 py-0.5 rounded bg-slate-950 dark:bg-slate-950 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-slate-300 dark:text-slate-300 light:text-slate-700">
+              <span class="tech-pill tech-pill-mongo text-[11px] font-mono px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-950 border border-slate-300 dark:border-slate-800 text-slate-700 dark:text-slate-300">
                 <svg class="w-3 h-3 tech-icon" viewBox="0 0 24 24" fill="#47A248"><path d="M12 1.5C12 1.5 5.5 8.5 5.5 13.5C5.5 17.5 8.5 21 12 22.5C15.5 21 18.5 17.5 18.5 13.5C18.5 8.5 12 1.5 12 1.5Z"/></svg>
                 <span>MongoDB</span>
               </span>
-              <span class="tech-pill tech-pill-redis text-[11px] font-mono px-2 py-0.5 rounded bg-slate-950 dark:bg-slate-950 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-accent-cyan font-medium">
+              <span class="tech-pill tech-pill-redis text-[11px] font-mono px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-950 border border-slate-300 dark:border-slate-800 text-accent-cyan font-medium">
                 <svg class="w-3 h-3 tech-icon" viewBox="0 0 24 24" fill="#DC382D"><path d="M21.5 6.5l-9.5-4.5-9.5 4.5 9.5 4.5 9.5-4.5zm-9.5 6.5l-9.5-4.5v5l9.5 4.5 9.5-4.5v-5l-9.5 4.5z"/></svg>
                 <span>Redis</span>
               </span>
-              <span class="tech-pill tech-pill-stripe text-[11px] font-mono px-2 py-0.5 rounded bg-slate-950 dark:bg-slate-950 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-slate-300 dark:text-slate-300 light:text-slate-700">
+              <span class="tech-pill tech-pill-stripe text-[11px] font-mono px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-950 border border-slate-300 dark:border-slate-800 text-slate-700 dark:text-slate-300">
                 <svg class="w-3 h-3 tech-icon" viewBox="0 0 24 24" fill="#635BFF"><path d="M13.976 9.15c-2.172-.806-3.356-1.426-3.356-2.409 0-.831.683-1.305 1.901-1.305 2.227 0 4.515.858 6.09 1.631l.89-5.494C18.252.975 15.697 0 12.165 0z"/></svg>
                 <span>Stripe</span>
               </span>
-              <span class="tech-pill text-[11px] font-mono px-2 py-0.5 rounded bg-slate-950 dark:bg-slate-950 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-slate-300 dark:text-slate-300 light:text-slate-700">
+              <span class="tech-pill text-[11px] font-mono px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-950 border border-slate-300 dark:border-slate-800 text-slate-700 dark:text-slate-300">
                 <svg class="w-3 h-3 tech-icon" viewBox="0 0 24 24" fill="#3448C5"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14z"/></svg>
                 <span>Cloudinary</span>
               </span>
-              <span class="tech-pill text-[11px] font-mono px-2 py-0.5 rounded bg-slate-950 dark:bg-slate-950 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-slate-300 dark:text-slate-300 light:text-slate-700">
+              <span class="tech-pill text-[11px] font-mono px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-950 border border-slate-300 dark:border-slate-800 text-slate-700 dark:text-slate-300">
                 <span>JWT</span>
               </span>
-              <span class="tech-pill text-[11px] font-mono px-2 py-0.5 rounded bg-slate-950 dark:bg-slate-950 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-slate-300 dark:text-slate-300 light:text-slate-700">
+              <span class="tech-pill text-[11px] font-mono px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-950 border border-slate-300 dark:border-slate-800 text-slate-700 dark:text-slate-300">
                 <span>Joi</span>
               </span>
-              <span class="tech-pill tech-pill-vitest text-[11px] font-mono px-2 py-0.5 rounded bg-slate-950 dark:bg-slate-950 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-brand-400 font-medium">
+              <span class="tech-pill tech-pill-vitest text-[11px] font-mono px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-950 border border-slate-300 dark:border-slate-800 text-brand-600 dark:text-brand-400 font-medium">
                 <svg class="w-3 h-3 tech-icon" viewBox="0 0 24 24" fill="#FCC72B"><path d="M17.5 2.5l-6 11.5h4.5l-7 8.5 2-8.5H6.5l6-11.5h5z"/></svg>
                 <span>Vitest</span>
               </span>
-              <span class="tech-pill text-[11px] font-mono px-2 py-0.5 rounded bg-slate-950 dark:bg-slate-950 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-slate-300 dark:text-slate-300 light:text-slate-700">
+              <span class="tech-pill text-[11px] font-mono px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-950 border border-slate-300 dark:border-slate-800 text-slate-700 dark:text-slate-300">
                 <span>Railway</span>
               </span>
-              <span class="tech-pill text-[11px] font-mono px-2 py-0.5 rounded bg-slate-950 dark:bg-slate-950 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-slate-300 dark:text-slate-300 light:text-slate-700">
+              <span class="tech-pill text-[11px] font-mono px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-950 border border-slate-300 dark:border-slate-800 text-slate-700 dark:text-slate-300">
                 <span>Vercel</span>
               </span>
             </div>
 
             <!-- Highlights (Verbatim) -->
-            <ul class="space-y-2.5 text-xs text-slate-300 dark:text-slate-300 light:text-slate-600 leading-relaxed pt-2">
+            <ul class="space-y-2.5 text-xs text-slate-600 dark:text-slate-300 leading-relaxed pt-2">
               <li class="flex items-start gap-2">
-                <span class="text-brand-400 font-mono text-xs">▹</span>
+                <span class="text-brand-500 font-mono text-xs">▹</span>
                 <span>Optimized catalog reads to sub-millisecond response times using Redis caching with real-time cart handling.</span>
               </li>
               <li class="flex items-start gap-2">
-                <span class="text-brand-400 font-mono text-xs">▹</span>
+                <span class="text-brand-500 font-mono text-xs">▹</span>
                 <span>Automated the Stripe webhook lifecycle for stock deduction and payment verification.</span>
               </li>
               <li class="flex items-start gap-2">
-                <span class="text-brand-400 font-mono text-xs">▹</span>
+                <span class="text-brand-500 font-mono text-xs">▹</span>
                 <span>Secured 19 endpoints with JWT and Joi validation; achieved a 100% pass rate across 52 Vitest automated tests.</span>
               </li>
             </ul>
@@ -1057,7 +1066,7 @@
           </div>
 
           <!-- Card Action Links -->
-          <div class="pt-6 mt-6 border-t border-slate-800/80 dark:border-slate-800/80 light:border-slate-200 flex flex-wrap items-center gap-2">
+          <div class="pt-6 mt-6 border-t border-slate-200 dark:border-slate-800/80 flex flex-wrap items-center gap-2">
             <a href="https://ict-project-ays9123.vercel.app/" target="_blank" rel="noopener noreferrer" class="flex-1 inline-flex items-center justify-center gap-1.5 py-2 px-2.5 rounded-lg bg-brand-500 hover:bg-brand-400 text-slate-950 font-semibold text-xs transition-colors">
               <span>Live Demo</span>
               <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
@@ -1066,7 +1075,7 @@
               <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
               <span>API Docs</span>
             </a>
-            <a href="https://github.com/hammadasdfg6-glitch/ICT-project" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg border border-slate-700 dark:border-slate-700 light:border-slate-300 hover:border-slate-500 text-slate-300 dark:text-slate-300 light:text-slate-700 text-xs font-medium transition-colors">
+            <a href="https://github.com/hammadasdfg6-glitch/ICT-project" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg border border-slate-300 dark:border-slate-700 hover:border-slate-500 text-slate-700 dark:text-slate-300 hover:text-slate-950 dark:hover:text-slate-100 text-xs font-medium transition-colors">
               <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
               <span>GitHub</span>
             </a>
@@ -1074,82 +1083,82 @@
         </div>
 
         <!-- Project 3: LibHub -->
-        <div class="flex flex-col justify-between p-6 sm:p-7 rounded-2xl bg-slate-900/70 dark:bg-slate-900/70 light:bg-white border border-slate-800 dark:border-slate-800 light:border-slate-200 hover:border-brand-500/50 hover:shadow-2xl hover:shadow-brand-500/10 transition-all reveal-init delay-200">
+        <div class="flex flex-col justify-between p-6 sm:p-7 rounded-2xl bg-white dark:bg-slate-900/70 border border-slate-200 dark:border-slate-800 hover:border-brand-500/50 hover:shadow-2xl hover:shadow-brand-500/10 transition-all reveal-init delay-200">
           <div class="space-y-4">
             
             <!-- Project Top Bar -->
             <div class="flex items-center justify-between">
-              <span class="font-mono text-xs font-semibold text-brand-400 bg-brand-500/10 border border-brand-500/20 px-2.5 py-1 rounded-md">
+              <span class="font-mono text-xs font-semibold text-brand-600 dark:text-brand-400 bg-brand-500/10 border border-brand-500/20 px-2.5 py-1 rounded-md">
                 Full-Stack REST API
               </span>
               <div class="flex items-center gap-2">
-                <a href="https://github.com/hammadasdfg6-glitch/Library-project-node-" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-slate-100 p-1 rounded transition-colors" aria-label="LibHub GitHub Repository">
+                <a href="https://github.com/hammadasdfg6-glitch/Library-project-node-" target="_blank" rel="noopener noreferrer" class="text-slate-600 dark:text-slate-400 hover:text-slate-950 dark:hover:text-slate-100 p-1 rounded transition-colors" aria-label="LibHub GitHub Repository">
                   <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
                 </a>
-                <a href="https://library-project-node.vercel.app/" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-brand-400 p-1 rounded transition-colors" aria-label="LibHub Live Application">
+                <a href="https://library-project-node.vercel.app/" target="_blank" rel="noopener noreferrer" class="text-slate-600 dark:text-slate-400 hover:text-brand-600 dark:hover:text-brand-400 p-1 rounded transition-colors" aria-label="LibHub Live Application">
                   <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
                 </a>
               </div>
             </div>
 
             <!-- Title -->
-            <h3 class="text-xl font-bold text-slate-100 dark:text-slate-100 light:text-slate-900">
+            <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100">
               LibHub — Full-Stack Library Management System &amp; REST API
             </h3>
 
             <!-- Tech Stack Pills with Logos -->
             <div class="flex flex-wrap gap-1.5 pt-1">
-              <span class="tech-pill text-[11px] font-mono px-2 py-0.5 rounded bg-slate-950 dark:bg-slate-950 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-slate-300 dark:text-slate-300 light:text-slate-700">
+              <span class="tech-pill text-[11px] font-mono px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-950 border border-slate-300 dark:border-slate-800 text-slate-700 dark:text-slate-300">
                 <svg class="w-3 h-3 tech-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 17.568l-6.802-9.671V17h-1.625V6.75h1.569l6.985 9.948v-9.948h1.625v10.818h-1.752z"/></svg>
                 <span>Next.js 16</span>
               </span>
-              <span class="tech-pill tech-pill-react text-[11px] font-mono px-2 py-0.5 rounded bg-slate-950 dark:bg-slate-950 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-slate-300 dark:text-slate-300 light:text-slate-700">
+              <span class="tech-pill tech-pill-react text-[11px] font-mono px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-950 border border-slate-300 dark:border-slate-800 text-slate-700 dark:text-slate-300">
                 <svg class="w-3 h-3 tech-icon" viewBox="0 0 24 24" fill="none" stroke="#61DAFB" stroke-width="1.5"><circle cx="12" cy="12" r="2" fill="#61DAFB"/><ellipse cx="12" cy="12" rx="10" ry="4.5"/><ellipse cx="12" cy="12" rx="10" ry="4.5" transform="rotate(60 12 12)"/></svg>
                 <span>React 19</span>
               </span>
-              <span class="tech-pill tech-pill-ts text-[11px] font-mono px-2 py-0.5 rounded bg-slate-950 dark:bg-slate-950 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-slate-300 dark:text-slate-300 light:text-slate-700">
+              <span class="tech-pill tech-pill-ts text-[11px] font-mono px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-950 border border-slate-300 dark:border-slate-800 text-slate-700 dark:text-slate-300">
                 <svg class="w-3 h-3 tech-icon" viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="4" fill="#3178C6"/><path d="M12.5 18V8.5H8.8V6.5h9.4v2h-3.7V18h-2z" fill="#FFF"/></svg>
                 <span>TypeScript</span>
               </span>
-              <span class="tech-pill tech-pill-node text-[11px] font-mono px-2 py-0.5 rounded bg-slate-950 dark:bg-slate-950 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-brand-400 font-medium">
+              <span class="tech-pill tech-pill-node text-[11px] font-mono px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-950 border border-slate-300 dark:border-slate-800 text-brand-600 dark:text-brand-400 font-medium">
                 <svg class="w-3 h-3 tech-icon" viewBox="0 0 24 24" fill="#5FA04E"><path d="M12 2l9.5 5.5v11L12 24l-9.5-5.5v-11L12 2z"/></svg>
                 <span>Node.js</span>
               </span>
-              <span class="tech-pill text-[11px] font-mono px-2 py-0.5 rounded bg-slate-950 dark:bg-slate-950 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-slate-300 dark:text-slate-300 light:text-slate-700">
+              <span class="tech-pill text-[11px] font-mono px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-950 border border-slate-300 dark:border-slate-800 text-slate-700 dark:text-slate-300">
                 <span>Express.js</span>
               </span>
-              <span class="tech-pill tech-pill-mongo text-[11px] font-mono px-2 py-0.5 rounded bg-slate-950 dark:bg-slate-950 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-slate-300 dark:text-slate-300 light:text-slate-700">
+              <span class="tech-pill tech-pill-mongo text-[11px] font-mono px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-950 border border-slate-300 dark:border-slate-800 text-slate-700 dark:text-slate-300">
                 <svg class="w-3 h-3 tech-icon" viewBox="0 0 24 24" fill="#47A248"><path d="M12 1.5C12 1.5 5.5 8.5 5.5 13.5C5.5 17.5 8.5 21 12 22.5C15.5 21 18.5 17.5 18.5 13.5C18.5 8.5 12 1.5 12 1.5Z"/></svg>
                 <span>MongoDB</span>
               </span>
-              <span class="tech-pill tech-pill-tailwind text-[11px] font-mono px-2 py-0.5 rounded bg-slate-950 dark:bg-slate-950 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-slate-300 dark:text-slate-300 light:text-slate-700">
+              <span class="tech-pill tech-pill-tailwind text-[11px] font-mono px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-950 border border-slate-300 dark:border-slate-800 text-slate-700 dark:text-slate-300">
                 <svg class="w-3 h-3 tech-icon" viewBox="0 0 24 24" fill="#38BDF8"><path d="M12.001 4.8c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624C13.666 10.618 15.027 12 18.001 12c3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C16.336 6.182 14.975 4.8 12.001 4.8z"/></svg>
                 <span>Tailwind CSS</span>
               </span>
-              <span class="tech-pill text-[11px] font-mono px-2 py-0.5 rounded bg-slate-950 dark:bg-slate-950 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-slate-300 dark:text-slate-300 light:text-slate-700">
+              <span class="tech-pill text-[11px] font-mono px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-950 border border-slate-300 dark:border-slate-800 text-slate-700 dark:text-slate-300">
                 <span>JWT</span>
               </span>
-              <span class="tech-pill text-[11px] font-mono px-2 py-0.5 rounded bg-slate-950 dark:bg-slate-950 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-slate-300 dark:text-slate-300 light:text-slate-700">
+              <span class="tech-pill text-[11px] font-mono px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-950 border border-slate-300 dark:border-slate-800 text-slate-700 dark:text-slate-300">
                 <svg class="w-3 h-3 tech-icon" viewBox="0 0 24 24" fill="#85EA2D"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 3c3.87 0 7 3.13 7 7s-3.13 7-7 7-7-3.13-7-7 3.13-7 7-7z"/></svg>
                 <span>Swagger</span>
               </span>
-              <span class="tech-pill text-[11px] font-mono px-2 py-0.5 rounded bg-slate-950 dark:bg-slate-950 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-slate-300 dark:text-slate-300 light:text-slate-700">
+              <span class="tech-pill text-[11px] font-mono px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-950 border border-slate-300 dark:border-slate-800 text-slate-700 dark:text-slate-300">
                 <span>Vercel</span>
               </span>
             </div>
 
             <!-- Highlights (Verbatim) -->
-            <ul class="space-y-2.5 text-xs text-slate-300 dark:text-slate-300 light:text-slate-600 leading-relaxed pt-2">
+            <ul class="space-y-2.5 text-xs text-slate-600 dark:text-slate-300 leading-relaxed pt-2">
               <li class="flex items-start gap-2">
-                <span class="text-brand-400 font-mono text-xs">▹</span>
+                <span class="text-brand-500 font-mono text-xs">▹</span>
                 <span>Developed 15+ REST endpoints with OpenAPI/Swagger documentation and dual-role JWT authentication for Admin and Member users.</span>
               </li>
               <li class="flex items-start gap-2">
-                <span class="text-brand-400 font-mono text-xs">▹</span>
+                <span class="text-brand-500 font-mono text-xs">▹</span>
                 <span>Implemented a real-time book borrowing and return workflow with copy tracking and circulation analytics.</span>
               </li>
               <li class="flex items-start gap-2">
-                <span class="text-brand-400 font-mono text-xs">▹</span>
+                <span class="text-brand-500 font-mono text-xs">▹</span>
                 <span>Built a Next.js 16 frontend featuring debounced catalog search and skeleton loading UI.</span>
               </li>
             </ul>
@@ -1157,12 +1166,12 @@
           </div>
 
           <!-- Card Action Links -->
-          <div class="pt-6 mt-6 border-t border-slate-800/80 dark:border-slate-800/80 light:border-slate-200 flex items-center gap-3">
+          <div class="pt-6 mt-6 border-t border-slate-200 dark:border-slate-800/80 flex items-center gap-3">
             <a href="https://library-project-node.vercel.app/" target="_blank" rel="noopener noreferrer" class="flex-1 inline-flex items-center justify-center gap-2 py-2 rounded-lg bg-brand-500 hover:bg-brand-400 text-slate-950 font-semibold text-xs transition-colors">
               <span>Live Demo</span>
               <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
             </a>
-            <a href="https://github.com/hammadasdfg6-glitch/Library-project-node-" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg border border-slate-700 dark:border-slate-700 light:border-slate-300 hover:border-slate-500 text-slate-300 dark:text-slate-300 light:text-slate-700 text-xs font-medium transition-colors">
+            <a href="https://github.com/hammadasdfg6-glitch/Library-project-node-" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg border border-slate-300 dark:border-slate-700 hover:border-slate-500 text-slate-700 dark:text-slate-300 hover:text-slate-950 dark:hover:text-slate-100 text-xs font-medium transition-colors">
               <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
               <span>GitHub</span>
             </a>
@@ -1175,32 +1184,32 @@
     <!-- =======================================================================
          EDUCATION SECTION
          ======================================================================= -->
-    <section id="education" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 border-t border-slate-800/60 dark:border-slate-800/60 light:border-slate-200">
+    <section id="education" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 border-t border-slate-200 dark:border-slate-800/60">
       
       <!-- Section Header -->
       <div class="space-y-2 mb-12 reveal-init">
-        <p class="font-mono text-xs uppercase tracking-widest text-brand-400">// 05. ACADEMIC FOUNDATION</p>
-        <h2 class="text-3xl sm:text-4xl font-bold text-slate-100 dark:text-slate-100 light:text-slate-900 tracking-tight">Education</h2>
+        <p class="font-mono text-xs uppercase tracking-widest text-brand-600 dark:text-brand-400">// 05. ACADEMIC FOUNDATION</p>
+        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-slate-100 tracking-tight">Education</h2>
       </div>
 
       <!-- Education Card -->
-      <div class="p-6 sm:p-8 rounded-2xl bg-slate-900/70 dark:bg-slate-900/70 light:bg-white border border-slate-800 dark:border-slate-800 light:border-slate-200 shadow-xl reveal-init">
+      <div class="p-6 sm:p-8 rounded-2xl bg-white dark:bg-slate-900/70 border border-slate-200 dark:border-slate-800 shadow-xl reveal-init">
         <div class="flex flex-col lg:flex-row lg:items-start justify-between gap-6">
           
           <!-- Left: University & Degree -->
           <div class="space-y-3">
             <div class="flex items-center gap-3">
-              <span class="p-2.5 rounded-xl bg-brand-500/10 text-brand-400 border border-brand-500/20">
+              <span class="p-2.5 rounded-xl bg-brand-500/10 text-brand-600 dark:text-brand-400 border border-brand-500/20">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"/>
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/>
                 </svg>
               </span>
               <div>
-                <h3 class="text-xl sm:text-2xl font-bold text-slate-100 dark:text-slate-100 light:text-slate-900">
+                <h3 class="text-xl sm:text-2xl font-bold text-slate-900 dark:text-slate-100">
                   Bachelor of Science in Software Engineering
                 </h3>
-                <p class="text-brand-400 dark:text-brand-400 light:text-brand-600 font-medium text-sm sm:text-base">
+                <p class="text-brand-600 dark:text-brand-400 font-medium text-sm sm:text-base">
                   PMAS Arid Agriculture University, Rawalpindi
                 </p>
               </div>
@@ -1208,27 +1217,27 @@
 
             <!-- Coursework Badges (Verbatim) -->
             <div class="pt-3 space-y-2">
-              <p class="text-xs font-mono uppercase tracking-wider text-slate-400 dark:text-slate-400 light:text-slate-500">Relevant Coursework:</p>
+              <p class="text-xs font-mono uppercase tracking-wider text-slate-500 dark:text-slate-400">Relevant Coursework:</p>
               <div class="flex flex-wrap gap-2">
-                <span class="tech-pill px-3 py-1.5 rounded-lg bg-slate-950/80 dark:bg-slate-950/80 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-200 text-xs text-slate-300 dark:text-slate-300 light:text-slate-700 font-mono">Data Structures &amp; Algorithms</span>
-                <span class="tech-pill px-3 py-1.5 rounded-lg bg-slate-950/80 dark:bg-slate-950/80 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-200 text-xs text-slate-300 dark:text-slate-300 light:text-slate-700 font-mono">Object-Oriented Programming</span>
-                <span class="tech-pill px-3 py-1.5 rounded-lg bg-slate-950/80 dark:bg-slate-950/80 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-200 text-xs text-slate-300 dark:text-slate-300 light:text-slate-700 font-mono">Database Systems</span>
-                <span class="tech-pill px-3 py-1.5 rounded-lg bg-slate-950/80 dark:bg-slate-950/80 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-200 text-xs text-slate-300 dark:text-slate-300 light:text-slate-700 font-mono">Web Technologies</span>
-                <span class="tech-pill px-3 py-1.5 rounded-lg bg-slate-950/80 dark:bg-slate-950/80 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-200 text-xs text-slate-300 dark:text-slate-300 light:text-slate-700 font-mono">Programming Fundamentals</span>
+                <span class="tech-pill px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-950/80 border border-slate-200 dark:border-slate-800 text-xs text-slate-700 dark:text-slate-300 font-mono">Data Structures &amp; Algorithms</span>
+                <span class="tech-pill px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-950/80 border border-slate-200 dark:border-slate-800 text-xs text-slate-700 dark:text-slate-300 font-mono">Object-Oriented Programming</span>
+                <span class="tech-pill px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-950/80 border border-slate-200 dark:border-slate-800 text-xs text-slate-700 dark:text-slate-300 font-mono">Database Systems</span>
+                <span class="tech-pill px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-950/80 border border-slate-200 dark:border-slate-800 text-xs text-slate-700 dark:text-slate-300 font-mono">Web Technologies</span>
+                <span class="tech-pill px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-950/80 border border-slate-200 dark:border-slate-800 text-xs text-slate-700 dark:text-slate-300 font-mono">Programming Fundamentals</span>
               </div>
             </div>
           </div>
 
           <!-- Right: Grade & Timeline Box -->
-          <div class="flex sm:flex-row lg:flex-col items-start sm:items-center lg:items-end justify-between gap-4 p-4 rounded-xl bg-slate-950/60 dark:bg-slate-950/60 light:bg-slate-100 border border-slate-800/80 dark:border-slate-800/80 light:border-slate-200 min-w-[200px]">
-            <div class="font-mono text-xs text-slate-400 dark:text-slate-400 light:text-slate-600">
+          <div class="flex sm:flex-row lg:flex-col items-start sm:items-center lg:items-end justify-between gap-4 p-4 rounded-xl bg-slate-100 dark:bg-slate-950/60 border border-slate-200 dark:border-slate-800/80 min-w-[200px]">
+            <div class="font-mono text-xs text-slate-500 dark:text-slate-400">
               Sep 2025 – May 2029
             </div>
             <div class="text-right">
-              <div class="font-mono text-2xl font-black text-brand-400 dark:text-brand-400 light:text-brand-600">
+              <div class="font-mono text-2xl font-black text-brand-600 dark:text-brand-400">
                 CGPA 3.71
               </div>
-              <div class="text-[11px] text-slate-400 dark:text-slate-400 light:text-slate-500 font-mono">
+              <div class="text-[11px] text-slate-500 dark:text-slate-400 font-mono">
                 Scale: 4.00
               </div>
             </div>
@@ -1241,13 +1250,13 @@
     <!-- =======================================================================
          CONTACT SECTION
          ======================================================================= -->
-    <section id="contact" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 border-t border-slate-800/60 dark:border-slate-800/60 light:border-slate-200">
+    <section id="contact" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 border-t border-slate-200 dark:border-slate-800/60">
       
       <!-- Section Header -->
       <div class="space-y-2 mb-12 reveal-init">
-        <p class="font-mono text-xs uppercase tracking-widest text-brand-400">// 06. GET IN TOUCH</p>
-        <h2 class="text-3xl sm:text-4xl font-bold text-slate-100 dark:text-slate-100 light:text-slate-900 tracking-tight">Contact &amp; Collaboration</h2>
-        <p class="text-slate-400 dark:text-slate-400 light:text-slate-600 text-sm max-w-xl">
+        <p class="font-mono text-xs uppercase tracking-widest text-brand-600 dark:text-brand-400">// 06. GET IN TOUCH</p>
+        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-slate-100 tracking-tight">Contact &amp; Collaboration</h2>
+        <p class="text-slate-600 dark:text-slate-400 text-sm max-w-xl">
           Interested in working together or discussing backend engineering roles? Let's connect.
         </p>
       </div>
@@ -1258,21 +1267,21 @@
         <div class="lg:col-span-5 space-y-4 reveal-init">
           
           <!-- Email Card with Copy Button -->
-          <div class="p-5 rounded-2xl bg-slate-900/70 dark:bg-slate-900/70 light:bg-white border border-slate-800 dark:border-slate-800 light:border-slate-200 flex items-center justify-between gap-4">
+          <div class="p-5 rounded-2xl bg-white dark:bg-slate-900/70 border border-slate-200 dark:border-slate-800 shadow-md flex items-center justify-between gap-4">
             <div class="flex items-center gap-3.5">
-              <div class="p-3 rounded-xl bg-brand-500/10 text-brand-400 border border-brand-500/20">
+              <div class="p-3 rounded-xl bg-brand-500/10 text-brand-600 dark:text-brand-400 border border-brand-500/20">
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                 </svg>
               </div>
               <div>
-                <div class="text-xs text-slate-400 dark:text-slate-400 light:text-slate-500 font-mono">EMAIL</div>
-                <a href="mailto:hammadasdfg6@gmail.com" class="text-sm sm:text-base font-medium text-slate-100 dark:text-slate-100 light:text-slate-900 hover:text-brand-400 transition-colors">
+                <div class="text-xs text-slate-500 dark:text-slate-400 font-mono">EMAIL</div>
+                <a href="mailto:hammadasdfg6@gmail.com" class="text-sm sm:text-base font-medium text-slate-900 dark:text-slate-100 hover:text-brand-600 dark:hover:text-brand-400 transition-colors">
                   hammadasdfg6@gmail.com
                 </a>
               </div>
             </div>
-            <button type="button" data-copy-text="hammadasdfg6@gmail.com" data-copy-label="Email" class="p-2 rounded-lg bg-slate-950 dark:bg-slate-950 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-slate-400 hover:text-brand-400 focus:outline-none focus:ring-2 focus:ring-brand-500 transition-all" title="Copy Email to Clipboard" aria-label="Copy Email">
+            <button type="button" data-copy-text="hammadasdfg6@gmail.com" data-copy-label="Email" class="p-2 rounded-lg bg-slate-100 dark:bg-slate-950 border border-slate-300 dark:border-slate-800 text-slate-500 dark:text-slate-400 hover:text-brand-600 dark:hover:text-brand-400 focus:outline-none focus:ring-2 focus:ring-brand-500 transition-all" title="Copy Email to Clipboard" aria-label="Copy Email">
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/>
               </svg>
@@ -1280,7 +1289,7 @@
           </div>
 
           <!-- Phone Card with Copy Button -->
-          <div class="p-5 rounded-2xl bg-slate-900/70 dark:bg-slate-900/70 light:bg-white border border-slate-800 dark:border-slate-800 light:border-slate-200 flex items-center justify-between gap-4">
+          <div class="p-5 rounded-2xl bg-white dark:bg-slate-900/70 border border-slate-200 dark:border-slate-800 shadow-md flex items-center justify-between gap-4">
             <div class="flex items-center gap-3.5">
               <div class="p-3 rounded-xl bg-accent-cyan/10 text-accent-cyan border border-accent-cyan/20">
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1288,13 +1297,13 @@
                 </svg>
               </div>
               <div>
-                <div class="text-xs text-slate-400 dark:text-slate-400 light:text-slate-500 font-mono">PHONE</div>
-                <a href="tel:+923113359962" class="text-sm sm:text-base font-medium text-slate-100 dark:text-slate-100 light:text-slate-900 hover:text-accent-cyan transition-colors">
+                <div class="text-xs text-slate-500 dark:text-slate-400 font-mono">PHONE</div>
+                <a href="tel:+923113359962" class="text-sm sm:text-base font-medium text-slate-900 dark:text-slate-100 hover:text-accent-cyan transition-colors">
                   +92 311 3359962
                 </a>
               </div>
             </div>
-            <button type="button" data-copy-text="+92 311 3359962" data-copy-label="Phone number" class="p-2 rounded-lg bg-slate-950 dark:bg-slate-950 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-slate-400 hover:text-accent-cyan focus:outline-none focus:ring-2 focus:ring-brand-500 transition-all" title="Copy Phone Number to Clipboard" aria-label="Copy Phone Number">
+            <button type="button" data-copy-text="+92 311 3359962" data-copy-label="Phone number" class="p-2 rounded-lg bg-slate-100 dark:bg-slate-950 border border-slate-300 dark:border-slate-800 text-slate-500 dark:text-slate-400 hover:text-accent-cyan focus:outline-none focus:ring-2 focus:ring-brand-500 transition-all" title="Copy Phone Number to Clipboard" aria-label="Copy Phone Number">
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/>
               </svg>
@@ -1302,16 +1311,16 @@
           </div>
 
           <!-- Location Card -->
-          <div class="p-5 rounded-2xl bg-slate-900/70 dark:bg-slate-900/70 light:bg-white border border-slate-800 dark:border-slate-800 light:border-slate-200 flex items-center gap-3.5">
-            <div class="p-3 rounded-xl bg-purple-500/10 text-purple-400 border border-purple-500/20">
+          <div class="p-5 rounded-2xl bg-white dark:bg-slate-900/70 border border-slate-200 dark:border-slate-800 shadow-md flex items-center gap-3.5">
+            <div class="p-3 rounded-xl bg-purple-500/10 text-purple-500 dark:text-purple-400 border border-purple-500/20">
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
               </svg>
             </div>
             <div>
-              <div class="text-xs text-slate-400 dark:text-slate-400 light:text-slate-500 font-mono">LOCATION</div>
-              <div class="text-sm sm:text-base font-medium text-slate-100 dark:text-slate-100 light:text-slate-900">
+              <div class="text-xs text-slate-500 dark:text-slate-400 font-mono">LOCATION</div>
+              <div class="text-sm sm:text-base font-medium text-slate-900 dark:text-slate-100">
                 Rawalpindi, Pakistan
               </div>
             </div>
@@ -1319,18 +1328,18 @@
 
           <!-- Profiles Grid -->
           <div class="grid grid-cols-2 gap-4 pt-1">
-            <a href="https://www.linkedin.com/in/muhammad-hammad-0a320a254/" target="_blank" rel="noopener noreferrer" class="p-4 rounded-xl bg-slate-900/70 dark:bg-slate-900/70 light:bg-white border border-slate-800 dark:border-slate-800 light:border-slate-200 hover:border-brand-500/40 flex items-center gap-3 group transition-all">
-              <svg class="w-5 h-5 text-slate-400 group-hover:text-brand-400" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            <a href="https://www.linkedin.com/in/muhammad-hammad-0a320a254/" target="_blank" rel="noopener noreferrer" class="p-4 rounded-xl bg-white dark:bg-slate-900/70 border border-slate-200 dark:border-slate-800 hover:border-brand-500/40 flex items-center gap-3 group transition-all shadow-sm">
+              <svg class="w-5 h-5 text-slate-500 group-hover:text-brand-600 dark:group-hover:text-brand-400" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
               <div>
-                <div class="text-xs font-bold text-slate-200 dark:text-slate-200 light:text-slate-800 group-hover:text-brand-400">LinkedIn</div>
-                <div class="text-[11px] text-slate-400">Connect &rarr;</div>
+                <div class="text-xs font-bold text-slate-800 dark:text-slate-200 group-hover:text-brand-600 dark:group-hover:text-brand-400">LinkedIn</div>
+                <div class="text-[11px] text-slate-500 dark:text-slate-400">Connect &rarr;</div>
               </div>
             </a>
-            <a href="https://github.com/hammadasdfg6-glitch" target="_blank" rel="noopener noreferrer" class="p-4 rounded-xl bg-slate-900/70 dark:bg-slate-900/70 light:bg-white border border-slate-800 dark:border-slate-800 light:border-slate-200 hover:border-brand-500/40 flex items-center gap-3 group transition-all">
-              <svg class="w-5 h-5 text-slate-400 group-hover:text-brand-400" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            <a href="https://github.com/hammadasdfg6-glitch" target="_blank" rel="noopener noreferrer" class="p-4 rounded-xl bg-white dark:bg-slate-900/70 border border-slate-200 dark:border-slate-800 hover:border-brand-500/40 flex items-center gap-3 group transition-all shadow-sm">
+              <svg class="w-5 h-5 text-slate-500 group-hover:text-brand-600 dark:group-hover:text-brand-400" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
               <div>
-                <div class="text-xs font-bold text-slate-200 dark:text-slate-200 light:text-slate-800 group-hover:text-brand-400">GitHub</div>
-                <div class="text-[11px] text-slate-400">Code repos &rarr;</div>
+                <div class="text-xs font-bold text-slate-800 dark:text-slate-200 group-hover:text-brand-600 dark:group-hover:text-brand-400">GitHub</div>
+                <div class="text-[11px] text-slate-500 dark:text-slate-400">Code repos &rarr;</div>
               </div>
             </a>
           </div>
@@ -1339,32 +1348,32 @@
 
         <!-- Right: Interactive Contact Form -->
         <div class="lg:col-span-7 reveal-init delay-100">
-          <form id="contact-form" class="p-6 sm:p-8 rounded-2xl bg-slate-900/70 dark:bg-slate-900/70 light:bg-white border border-slate-800 dark:border-slate-800 light:border-slate-200 shadow-xl space-y-4">
+          <form id="contact-form" class="p-6 sm:p-8 rounded-2xl bg-white dark:bg-slate-900/70 border border-slate-200 dark:border-slate-800 shadow-xl space-y-4">
             
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <!-- Name Input -->
               <div class="space-y-1.5">
-                <label for="contact-name" class="block font-mono text-xs text-slate-300 dark:text-slate-300 light:text-slate-700">YOUR NAME *</label>
-                <input type="text" id="contact-name" name="name" required placeholder="Jane Doe" class="w-full px-4 py-2.5 rounded-xl bg-slate-950/80 dark:bg-slate-950/80 light:bg-slate-50 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-slate-100 dark:text-slate-100 light:text-slate-900 text-sm focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 placeholder-slate-600 transition-all">
+                <label for="contact-name" class="block font-mono text-xs text-slate-700 dark:text-slate-300">YOUR NAME *</label>
+                <input type="text" id="contact-name" name="name" required placeholder="Jane Doe" class="w-full px-4 py-2.5 rounded-xl bg-slate-50 dark:bg-slate-950/80 border border-slate-300 dark:border-slate-800 text-slate-900 dark:text-slate-100 text-sm focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 placeholder-slate-400 dark:placeholder-slate-600 transition-all">
               </div>
 
               <!-- Email Input -->
               <div class="space-y-1.5">
-                <label for="contact-email" class="block font-mono text-xs text-slate-300 dark:text-slate-300 light:text-slate-700">YOUR EMAIL *</label>
-                <input type="email" id="contact-email" name="email" required placeholder="jane@example.com" class="w-full px-4 py-2.5 rounded-xl bg-slate-950/80 dark:bg-slate-950/80 light:bg-slate-50 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-slate-100 dark:text-slate-100 light:text-slate-900 text-sm focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 placeholder-slate-600 transition-all">
+                <label for="contact-email" class="block font-mono text-xs text-slate-700 dark:text-slate-300">YOUR EMAIL *</label>
+                <input type="email" id="contact-email" name="email" required placeholder="jane@example.com" class="w-full px-4 py-2.5 rounded-xl bg-slate-50 dark:bg-slate-950/80 border border-slate-300 dark:border-slate-800 text-slate-900 dark:text-slate-100 text-sm focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 placeholder-slate-400 dark:placeholder-slate-600 transition-all">
               </div>
             </div>
 
             <!-- Subject Input -->
             <div class="space-y-1.5">
-              <label for="contact-subject" class="block font-mono text-xs text-slate-300 dark:text-slate-300 light:text-slate-700">SUBJECT</label>
-              <input type="text" id="contact-subject" name="subject" placeholder="Backend Engineer Role / Project Inquiry" class="w-full px-4 py-2.5 rounded-xl bg-slate-950/80 dark:bg-slate-950/80 light:bg-slate-50 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-slate-100 dark:text-slate-100 light:text-slate-900 text-sm focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 placeholder-slate-600 transition-all">
+              <label for="contact-subject" class="block font-mono text-xs text-slate-700 dark:text-slate-300">SUBJECT</label>
+              <input type="text" id="contact-subject" name="subject" placeholder="Backend Engineer Role / Project Inquiry" class="w-full px-4 py-2.5 rounded-xl bg-slate-50 dark:bg-slate-950/80 border border-slate-300 dark:border-slate-800 text-slate-900 dark:text-slate-100 text-sm focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 placeholder-slate-400 dark:placeholder-slate-600 transition-all">
             </div>
 
             <!-- Message Textarea -->
             <div class="space-y-1.5">
-              <label for="contact-message" class="block font-mono text-xs text-slate-300 dark:text-slate-300 light:text-slate-700">MESSAGE *</label>
-              <textarea id="contact-message" name="message" rows="4" required placeholder="Hi Hammad, I'd like to discuss an opportunity..." class="w-full px-4 py-2.5 rounded-xl bg-slate-950/80 dark:bg-slate-950/80 light:bg-slate-50 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-slate-100 dark:text-slate-100 light:text-slate-900 text-sm focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 placeholder-slate-600 transition-all resize-y"></textarea>
+              <label for="contact-message" class="block font-mono text-xs text-slate-700 dark:text-slate-300">MESSAGE *</label>
+              <textarea id="contact-message" name="message" rows="4" required placeholder="Hi Hammad, I'd like to discuss an opportunity..." class="w-full px-4 py-2.5 rounded-xl bg-slate-50 dark:bg-slate-950/80 border border-slate-300 dark:border-slate-800 text-slate-900 dark:text-slate-100 text-sm focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 placeholder-slate-400 dark:placeholder-slate-600 transition-all resize-y"></textarea>
             </div>
 
             <!-- Submit Button & Note -->
@@ -1375,7 +1384,7 @@
                 </svg>
                 <span>Send Message</span>
               </button>
-              <span class="text-xs text-slate-400 dark:text-slate-400 light:text-slate-500 font-mono text-center sm:text-right">
+              <span class="text-xs text-slate-500 dark:text-slate-400 font-mono text-center sm:text-right">
                 Dispatches immediately via email client
               </span>
             </div>
@@ -1391,7 +1400,7 @@
   <!-- =========================================================================
        FOOTER
        ========================================================================= -->
-  <footer class="border-t border-slate-800/80 dark:border-slate-800/80 light:border-slate-200 bg-[#090d16] dark:bg-[#090d16] light:bg-white py-12 transition-colors">
+  <footer class="border-t border-slate-200 dark:border-slate-800/80 bg-slate-100 dark:bg-[#090d16] py-12 transition-colors">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex flex-col md:flex-row items-center justify-between gap-6">
         
@@ -1400,26 +1409,26 @@
           <span class="w-8 h-8 rounded-lg bg-gradient-to-br from-brand-500 to-accent-cyan flex items-center justify-center font-mono font-bold text-slate-950 text-sm shadow-md">
             MH
           </span>
-          <p class="text-xs text-slate-400 dark:text-slate-400 light:text-slate-600">
+          <p class="text-xs text-slate-600 dark:text-slate-400">
             &copy; <span id="current-year"></span> Muhammad Hammad. All rights reserved.
           </p>
         </div>
 
         <!-- Repeated Social Links -->
         <div class="flex items-center gap-3">
-          <a href="mailto:hammadasdfg6@gmail.com" class="p-2 rounded-lg bg-slate-900/60 dark:bg-slate-900/60 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-slate-400 hover:text-brand-400 transition-colors" aria-label="Email Muhammad Hammad">
+          <a href="mailto:hammadasdfg6@gmail.com" class="p-2 rounded-lg bg-white dark:bg-slate-900/60 border border-slate-300 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:text-brand-600 dark:hover:text-brand-400 transition-colors" aria-label="Email Muhammad Hammad">
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
           </a>
-          <a href="https://www.linkedin.com/in/muhammad-hammad-0a320a254/" target="_blank" rel="noopener noreferrer" class="p-2 rounded-lg bg-slate-900/60 dark:bg-slate-900/60 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-slate-400 hover:text-brand-400 transition-colors" aria-label="Muhammad Hammad LinkedIn">
+          <a href="https://www.linkedin.com/in/muhammad-hammad-0a320a254/" target="_blank" rel="noopener noreferrer" class="p-2 rounded-lg bg-white dark:bg-slate-900/60 border border-slate-300 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:text-brand-600 dark:hover:text-brand-400 transition-colors" aria-label="Muhammad Hammad LinkedIn">
             <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
           </a>
-          <a href="https://github.com/hammadasdfg6-glitch" target="_blank" rel="noopener noreferrer" class="p-2 rounded-lg bg-slate-900/60 dark:bg-slate-900/60 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-300 text-slate-400 hover:text-brand-400 transition-colors" aria-label="Muhammad Hammad GitHub">
+          <a href="https://github.com/hammadasdfg6-glitch" target="_blank" rel="noopener noreferrer" class="p-2 rounded-lg bg-white dark:bg-slate-900/60 border border-slate-300 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:text-brand-600 dark:hover:text-brand-400 transition-colors" aria-label="Muhammad Hammad GitHub">
             <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
           </a>
         </div>
 
         <!-- Back to Top Link -->
-        <a href="#home" class="text-xs font-mono text-slate-400 dark:text-slate-400 light:text-slate-600 hover:text-brand-400 flex items-center gap-1.5 transition-colors">
+        <a href="#home" class="text-xs font-mono text-slate-500 dark:text-slate-400 hover:text-brand-600 dark:hover:text-brand-400 flex items-center gap-1.5 transition-colors">
           <span>Back to top</span>
           <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
         </a>
@@ -1431,7 +1440,7 @@
   <!-- =========================================================================
        FLOATING BACK-TO-TOP BUTTON
        ========================================================================= -->
-  <button id="back-to-top" type="button" aria-label="Scroll back to top" class="fixed bottom-6 left-6 z-40 p-3 rounded-xl bg-slate-900/90 dark:bg-slate-900/90 light:bg-white border border-slate-800 dark:border-slate-800 light:border-slate-300 text-brand-400 shadow-xl opacity-0 pointer-events-none translate-y-4 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-brand-500">
+  <button id="back-to-top" type="button" aria-label="Scroll back to top" class="fixed bottom-6 left-6 z-40 p-3 rounded-xl bg-white dark:bg-slate-900/90 border border-slate-300 dark:border-slate-800 text-brand-600 dark:text-brand-400 shadow-xl opacity-0 pointer-events-none translate-y-4 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-brand-500">
     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"/>
     </svg>
@@ -1440,11 +1449,11 @@
   <!-- =========================================================================
        TOAST NOTIFICATION COMPONENT
        ========================================================================= -->
-  <div id="toast-notification" class="fixed bottom-6 right-6 z-50 flex items-center gap-3 px-5 py-3 rounded-xl border border-brand-500/40 bg-slate-900/95 text-brand-400 shadow-2xl backdrop-blur-md transition-all duration-300 opacity-0 pointer-events-none">
+  <div id="toast-notification" class="fixed bottom-6 right-6 z-50 flex items-center gap-3 px-5 py-3 rounded-xl border border-brand-500/40 bg-white dark:bg-slate-900/95 text-brand-600 dark:text-brand-400 shadow-2xl backdrop-blur-md transition-all duration-300 opacity-0 pointer-events-none">
     <svg id="toast-icon" class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
     </svg>
-    <span id="toast-message" class="text-sm font-medium text-slate-100">Notification message</span>
+    <span id="toast-message" class="text-sm font-medium text-slate-800 dark:text-slate-100">Notification message</span>
   </div>
 
   <!-- Main JavaScript File -->

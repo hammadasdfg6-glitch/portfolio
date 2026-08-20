@@ -95,19 +95,17 @@ function initTypingEffect() {
     if (isDeleting) {
       typingElement.textContent = currentRole.substring(0, charIndex - 1);
       charIndex--;
-      typingSpeed = 45; // Faster deletion
+      typingSpeed = 45;
     } else {
       typingElement.textContent = currentRole.substring(0, charIndex + 1);
       charIndex++;
-      typingSpeed = 85 + Math.random() * 30; // Natural keystroke variance
+      typingSpeed = 85 + Math.random() * 30;
     }
 
     if (!isDeleting && charIndex === currentRole.length) {
-      // Pause at full word
       typingSpeed = 2200;
       isDeleting = true;
     } else if (isDeleting && charIndex === 0) {
-      // Word finished deleting, move to next
       isDeleting = false;
       roleIndex = (roleIndex + 1) % roles.length;
       typingSpeed = 500;
@@ -116,7 +114,6 @@ function initTypingEffect() {
     setTimeout(type, typingSpeed);
   }
 
-  // Initial delay before typing starts
   setTimeout(type, 800);
 }
 
@@ -127,7 +124,6 @@ function initScrollReveal() {
   const revealElements = document.querySelectorAll('.reveal-init');
   
   if (!('IntersectionObserver' in window)) {
-    // Fallback if IntersectionObserver isn't supported
     revealElements.forEach(el => el.classList.add('reveal-visible'));
     return;
   }
@@ -157,11 +153,11 @@ function initNavbarScroll() {
 
   function onScroll() {
     if (window.scrollY > 30) {
-      navbar.classList.add('py-3', 'shadow-lg', 'shadow-slate-950/20');
+      navbar.classList.add('py-3', 'shadow-md');
       navbar.classList.remove('py-5');
     } else {
       navbar.classList.add('py-5');
-      navbar.classList.remove('py-3', 'shadow-lg', 'shadow-slate-950/20');
+      navbar.classList.remove('py-3', 'shadow-md');
     }
   }
 
@@ -188,11 +184,11 @@ function initActiveNavHighlight() {
       if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
         navLinks.forEach(link => {
           if (link.getAttribute('href') === `#${sectionId}`) {
-            link.classList.add('text-emerald-400', 'dark:text-emerald-400');
-            link.classList.remove('text-slate-400', 'dark:text-slate-400', 'text-slate-600');
+            link.classList.add('text-brand-600', 'dark:text-brand-400', 'font-semibold');
+            link.classList.remove('text-slate-600', 'dark:text-slate-400');
           } else {
-            link.classList.remove('text-emerald-400', 'dark:text-emerald-400');
-            link.classList.add('text-slate-400', 'dark:text-slate-400');
+            link.classList.remove('text-brand-600', 'dark:text-brand-400', 'font-semibold');
+            link.classList.add('text-slate-600', 'dark:text-slate-400');
           }
         });
       }
@@ -245,7 +241,6 @@ function initMobileMenu() {
     link.addEventListener('click', closeMenu);
   });
 
-  // Close with Escape key
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && !mobileDrawer.classList.contains('hidden')) {
       closeMenu();
@@ -259,16 +254,15 @@ function initMobileMenu() {
 function showToast(message, type = 'success') {
   const toast = document.getElementById('toast-notification');
   const toastMessage = document.getElementById('toast-message');
-  const toastIcon = document.getElementById('toast-icon');
   
   if (!toast || !toastMessage) return;
 
   toastMessage.textContent = message;
   
   if (type === 'success') {
-    toast.className = 'fixed bottom-6 right-6 z-50 flex items-center gap-3 px-5 py-3 rounded-xl border border-emerald-500/40 bg-slate-900/95 text-emerald-400 shadow-2xl backdrop-blur-md show';
+    toast.className = 'fixed bottom-6 right-6 z-50 flex items-center gap-3 px-5 py-3 rounded-xl border border-brand-500/40 bg-white dark:bg-slate-900/95 text-brand-600 dark:text-brand-400 shadow-2xl backdrop-blur-md show';
   } else {
-    toast.className = 'fixed bottom-6 right-6 z-50 flex items-center gap-3 px-5 py-3 rounded-xl border border-slate-700 bg-slate-900/95 text-slate-200 shadow-2xl backdrop-blur-md show';
+    toast.className = 'fixed bottom-6 right-6 z-50 flex items-center gap-3 px-5 py-3 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900/95 text-slate-800 dark:text-slate-200 shadow-2xl backdrop-blur-md show';
   }
 
   setTimeout(() => {
@@ -289,7 +283,6 @@ function initClipboardButtons() {
         if (navigator.clipboard && window.isSecureContext) {
           await navigator.clipboard.writeText(textToCopy);
         } else {
-          // Fallback
           const textarea = document.createElement('textarea');
           textarea.value = textToCopy;
           textarea.style.position = 'fixed';
@@ -344,7 +337,6 @@ function initContactForm() {
 
     const mailtoUrl = `mailto:${emailRecipient}?subject=${emailSubject}&body=${emailBody}`;
 
-    // Open default mail client
     window.location.href = mailtoUrl;
 
     showToast('Opening your email client to send message...', 'success');

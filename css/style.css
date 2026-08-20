@@ -7,6 +7,7 @@
 :root {
   --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
   --font-mono: 'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  color-scheme: dark;
 }
 
 html {
@@ -15,54 +16,64 @@ html {
   scroll-padding-top: 5rem;
 }
 
+html:not(.dark) {
+  color-scheme: light;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
 }
 
-::-webkit-scrollbar-track {
+html.dark ::-webkit-scrollbar-track {
   background: #090d16;
 }
 
-.light ::-webkit-scrollbar-track {
+html:not(.dark) ::-webkit-scrollbar-track {
   background: #f1f5f9;
 }
 
-::-webkit-scrollbar-thumb {
+html.dark ::-webkit-scrollbar-thumb {
   background: #1e293b;
   border-radius: 4px;
 }
 
-.light ::-webkit-scrollbar-thumb {
+html:not(.dark) ::-webkit-scrollbar-thumb {
   background: #cbd5e1;
+  border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #10b981;
+  background: #10b981 !important;
 }
 
 /* Background Grid Pattern */
-.bg-grid-pattern {
+html.dark .bg-grid-pattern {
   background-size: 32px 32px;
   background-image: 
     linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
 }
 
-.light .bg-grid-pattern {
+html:not(.dark) .bg-grid-pattern {
+  background-size: 32px 32px;
   background-image: 
-    linear-gradient(to right, rgba(0, 0, 0, 0.04) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
+    linear-gradient(to right, rgba(15, 23, 42, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(15, 23, 42, 0.05) 1px, transparent 1px);
 }
 
-/* Subtle Radial Glow */
-.hero-glow {
+/* Radial Hero Glow */
+html.dark .hero-glow {
   background: radial-gradient(circle at 50% 30%, rgba(16, 185, 129, 0.12) 0%, rgba(6, 182, 212, 0.04) 45%, transparent 70%);
 }
 
-.light .hero-glow {
-  background: radial-gradient(circle at 50% 30%, rgba(16, 185, 129, 0.08) 0%, rgba(6, 182, 212, 0.02) 45%, transparent 70%);
+html:not(.dark) .hero-glow {
+  background: radial-gradient(circle at 50% 30%, rgba(16, 185, 129, 0.1) 0%, rgba(6, 182, 212, 0.03) 45%, transparent 70%);
 }
 
 /* Typing Cursor Effect */
@@ -94,7 +105,7 @@ html {
   transform: translateY(0);
 }
 
-/* Stagger delay classes for smoother appearance */
+/* Stagger delays */
 .delay-100 { transition-delay: 100ms; }
 .delay-200 { transition-delay: 200ms; }
 .delay-300 { transition-delay: 300ms; }
