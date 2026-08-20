@@ -115,6 +115,11 @@ html {
   .typing-cursor {
     animation: none !important;
   }
+
+  .tech-pill, .tech-icon {
+    transform: none !important;
+    transition: none !important;
+  }
 }
 
 /* Glassmorphic Cards */
@@ -143,6 +148,139 @@ html {
   animation: pulse-ring 2s cubic-bezier(0.45, 0, 0.55, 1) infinite;
 }
 
+/* ==========================================================================
+   TECH BADGE & PILL MICRO-ANIMATIONS
+   Subtle lift, physics-based icon rotation/scale, and brand-colored glows
+   ========================================================================== */
+
+.tech-pill {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  transition: all 0.26s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, box-shadow, border-color;
+  cursor: pointer;
+  user-select: none;
+}
+
+.tech-pill:hover {
+  transform: translateY(-2.5px) scale(1.035);
+  box-shadow: 0 6px 18px -3px rgba(16, 185, 129, 0.25);
+  border-color: rgba(52, 211, 153, 0.55) !important;
+}
+
+.tech-pill .tech-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: transform 0.32s cubic-bezier(0.34, 1.56, 0.64, 1), filter 0.25s ease;
+  will-change: transform;
+}
+
+.tech-pill:hover .tech-icon {
+  transform: scale(1.22) rotate(6deg);
+  filter: drop-shadow(0 0 4px rgba(52, 211, 153, 0.5));
+}
+
+/* Brand specific glow overrides */
+.tech-pill-node:hover {
+  box-shadow: 0 6px 18px -3px rgba(95, 160, 78, 0.38);
+  border-color: rgba(95, 160, 78, 0.6) !important;
+}
+.tech-pill-node:hover .tech-icon {
+  filter: drop-shadow(0 0 5px rgba(95, 160, 78, 0.6));
+}
+
+.tech-pill-ts:hover {
+  box-shadow: 0 6px 18px -3px rgba(49, 120, 198, 0.42);
+  border-color: rgba(49, 120, 198, 0.65) !important;
+}
+.tech-pill-ts:hover .tech-icon {
+  filter: drop-shadow(0 0 5px rgba(49, 120, 198, 0.7));
+}
+
+.tech-pill-js:hover {
+  box-shadow: 0 6px 18px -3px rgba(247, 223, 30, 0.38);
+  border-color: rgba(247, 223, 30, 0.6) !important;
+}
+.tech-pill-js:hover .tech-icon {
+  filter: drop-shadow(0 0 5px rgba(247, 223, 30, 0.7));
+}
+
+.tech-pill-redis:hover {
+  box-shadow: 0 6px 18px -3px rgba(220, 56, 45, 0.42);
+  border-color: rgba(220, 56, 45, 0.65) !important;
+}
+.tech-pill-redis:hover .tech-icon {
+  filter: drop-shadow(0 0 5px rgba(220, 56, 45, 0.7));
+}
+
+.tech-pill-mongo:hover {
+  box-shadow: 0 6px 18px -3px rgba(71, 162, 72, 0.42);
+  border-color: rgba(71, 162, 72, 0.65) !important;
+}
+.tech-pill-mongo:hover .tech-icon {
+  filter: drop-shadow(0 0 5px rgba(71, 162, 72, 0.7));
+}
+
+.tech-pill-docker:hover {
+  box-shadow: 0 6px 18px -3px rgba(36, 150, 237, 0.42);
+  border-color: rgba(36, 150, 237, 0.65) !important;
+}
+.tech-pill-docker:hover .tech-icon {
+  filter: drop-shadow(0 0 5px rgba(36, 150, 237, 0.7));
+}
+
+.tech-pill-stripe:hover {
+  box-shadow: 0 6px 18px -3px rgba(99, 91, 255, 0.42);
+  border-color: rgba(99, 91, 255, 0.65) !important;
+}
+.tech-pill-stripe:hover .tech-icon {
+  filter: drop-shadow(0 0 5px rgba(99, 91, 255, 0.7));
+}
+
+.tech-pill-vitest:hover {
+  box-shadow: 0 6px 18px -3px rgba(252, 199, 43, 0.42);
+  border-color: rgba(252, 199, 43, 0.65) !important;
+}
+.tech-pill-vitest:hover .tech-icon {
+  filter: drop-shadow(0 0 5px rgba(252, 199, 43, 0.7));
+}
+
+.tech-pill-react:hover {
+  box-shadow: 0 6px 18px -3px rgba(97, 218, 251, 0.42);
+  border-color: rgba(97, 218, 251, 0.65) !important;
+}
+.tech-pill-react:hover .tech-icon {
+  filter: drop-shadow(0 0 5px rgba(97, 218, 251, 0.7));
+}
+
+.tech-pill-tailwind:hover {
+  box-shadow: 0 6px 18px -3px rgba(56, 189, 248, 0.42);
+  border-color: rgba(56, 189, 248, 0.65) !important;
+}
+.tech-pill-tailwind:hover .tech-icon {
+  filter: drop-shadow(0 0 5px rgba(56, 189, 248, 0.7));
+}
+
+.tech-pill-postman:hover {
+  box-shadow: 0 6px 18px -3px rgba(255, 108, 55, 0.42);
+  border-color: rgba(255, 108, 55, 0.65) !important;
+}
+.tech-pill-postman:hover .tech-icon {
+  filter: drop-shadow(0 0 5px rgba(255, 108, 55, 0.7));
+}
+
+.tech-pill-git:hover {
+  box-shadow: 0 6px 18px -3px rgba(240, 80, 50, 0.42);
+  border-color: rgba(240, 80, 50, 0.65) !important;
+}
+.tech-pill-git:hover .tech-icon {
+  filter: drop-shadow(0 0 5px rgba(240, 80, 50, 0.7));
+}
+
 /* Toast Notification Styles */
 #toast-notification {
   transform: translateY(120%);
@@ -151,16 +289,4 @@ html {
 
 #toast-notification.show {
   transform: translateY(0);
-}
-
-/* Code block line numbering simulation */
-.code-line::before {
-  counter-increment: line-counter;
-  content: counter(line-counter);
-  display: inline-block;
-  width: 1.5rem;
-  margin-right: 1rem;
-  color: #475569;
-  text-align: right;
-  user-select: none;
 }
