@@ -83,6 +83,9 @@
 </head>
 <body class="bg-slate-50 text-slate-900 dark:bg-[#090d16] dark:text-slate-100 antialiased selection:bg-brand-500 selection:text-slate-950 transition-colors duration-300 bg-grid-pattern min-h-screen flex flex-col justify-between">
 
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress" style="width: 0%;"></div>
+
   <!-- =========================================================================
        HEADER / NAVIGATION
        ========================================================================= -->
@@ -92,7 +95,7 @@
         
         <!-- Logo / Monogram -->
         <a href="#home" class="flex items-center gap-2.5 group focus:outline-none focus:ring-2 focus:ring-brand-500 rounded-lg p-1" aria-label="Muhammad Hammad Homepage">
-          <span class="w-9 h-9 rounded-lg bg-gradient-to-br from-brand-500 to-accent-cyan flex items-center justify-center font-mono font-bold text-slate-950 text-base shadow-md shadow-brand-500/20 group-hover:scale-105 transition-transform">
+          <span class="w-9 h-9 rounded-lg bg-gradient-to-br from-brand-500 to-accent-cyan flex items-center justify-center font-mono font-bold text-slate-950 text-base shadow-md shadow-brand-500/20 group-hover:scale-110 group-hover:rotate-6 group-hover:shadow-lg group-hover:shadow-brand-500/40 transition-all duration-300">
             MH
           </span>
           <span class="flex flex-col">
@@ -208,11 +211,22 @@
     <!-- =======================================================================
          HERO SECTION
          ======================================================================= -->
-    <section id="home" class="relative hero-glow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-20 md:py-24">
+    <section id="home" class="relative hero-glow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-20 md:py-24 overflow-hidden">
+      
+      <!-- Decorative Floating Particles -->
+      <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
+        <div class="hero-particle particle-1 absolute top-20 left-[15%] w-2 h-2 rounded-full bg-brand-500/30"></div>
+        <div class="hero-particle particle-2 absolute top-40 right-[20%] w-1.5 h-1.5 rounded-full bg-accent-cyan/25"></div>
+        <div class="hero-particle particle-3 absolute bottom-32 left-[35%] w-2.5 h-2.5 rounded-full bg-brand-400/20"></div>
+        <div class="hero-particle particle-1 absolute top-[60%] right-[10%] w-1 h-1 rounded-full bg-accent-cyan/30"></div>
+        <div class="hero-particle particle-2 absolute top-16 left-[60%] w-1.5 h-1.5 rounded-full bg-brand-500/20"></div>
+        <div class="hero-particle particle-3 absolute bottom-16 right-[30%] w-2 h-2 rounded-full bg-accent-cyan/15"></div>
+      </div>
+      
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
         
         <!-- Hero Text Column (Left) -->
-        <div class="lg:col-span-7 space-y-6 reveal-init">
+        <div class="lg:col-span-7 space-y-6 reveal-init-left">
           
           <!-- Availability / Status Chip -->
           <div class="inline-flex items-center gap-2.5 px-3 py-1.5 rounded-full border border-brand-500/30 bg-brand-500/10 text-brand-700 dark:text-brand-400 text-xs font-mono">
@@ -258,7 +272,7 @@
           <div class="flex flex-wrap items-center gap-3.5 pt-2">
             
             <!-- Primary Download CV Button -->
-            <a href="assets/Muhammad_Hammad_CV.pdf" download="Muhammad_Hammad_CV.pdf" class="inline-flex items-center gap-2.5 px-6 py-3 rounded-xl bg-brand-500 hover:bg-brand-400 text-slate-950 font-bold text-sm tracking-wide shadow-lg shadow-brand-500/25 hover:shadow-brand-500/40 transform hover:-translate-y-0.5 active:translate-y-0 transition-all focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-2 focus:ring-offset-slate-900" aria-label="Download Muhammad Hammad CV as PDF">
+            <a href="assets/Muhammad_Hammad_CV.pdf" download="Muhammad_Hammad_CV.pdf" class="magnetic-btn glow-pulse inline-flex items-center gap-2.5 px-6 py-3 rounded-xl bg-brand-500 hover:bg-brand-400 text-slate-950 font-bold text-sm tracking-wide shadow-lg shadow-brand-500/25 hover:shadow-brand-500/40 active:translate-y-0 transition-all focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-2 focus:ring-offset-slate-900" aria-label="Download Muhammad Hammad CV as PDF">
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
               </svg>
@@ -289,21 +303,21 @@
             <span class="text-xs font-mono text-slate-500 dark:text-slate-400">CONNECT:</span>
             
             <!-- Email -->
-            <a href="mailto:hammadasdfg6@gmail.com" class="p-2.5 rounded-lg bg-slate-200 dark:bg-slate-900/80 border border-slate-300 dark:border-slate-800 text-slate-700 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 hover:border-brand-500/40 transition-all focus:outline-none focus:ring-2 focus:ring-brand-500" aria-label="Send Email to Muhammad Hammad">
+            <a href="mailto:hammadasdfg6@gmail.com" class="social-icon p-2.5 rounded-lg bg-slate-200 dark:bg-slate-900/80 border border-slate-300 dark:border-slate-800 text-slate-700 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 hover:border-brand-500/40 focus:outline-none focus:ring-2 focus:ring-brand-500" aria-label="Send Email to Muhammad Hammad">
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
               </svg>
             </a>
 
             <!-- LinkedIn -->
-            <a href="https://www.linkedin.com/in/muhammad-hammad-0a320a254/" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-lg bg-slate-200 dark:bg-slate-900/80 border border-slate-300 dark:border-slate-800 text-slate-700 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 hover:border-brand-500/40 transition-all focus:outline-none focus:ring-2 focus:ring-brand-500" aria-label="Visit Muhammad Hammad LinkedIn Profile">
+            <a href="https://www.linkedin.com/in/muhammad-hammad-0a320a254/" target="_blank" rel="noopener noreferrer" class="social-icon p-2.5 rounded-lg bg-slate-200 dark:bg-slate-900/80 border border-slate-300 dark:border-slate-800 text-slate-700 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 hover:border-brand-500/40 focus:outline-none focus:ring-2 focus:ring-brand-500" aria-label="Visit Muhammad Hammad LinkedIn Profile">
               <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
               </svg>
             </a>
 
             <!-- GitHub -->
-            <a href="https://github.com/hammadasdfg6-glitch" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-lg bg-slate-200 dark:bg-slate-900/80 border border-slate-300 dark:border-slate-800 text-slate-700 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 hover:border-brand-500/40 transition-all focus:outline-none focus:ring-2 focus:ring-brand-500" aria-label="Visit Muhammad Hammad GitHub Profile">
+            <a href="https://github.com/hammadasdfg6-glitch" target="_blank" rel="noopener noreferrer" class="social-icon p-2.5 rounded-lg bg-slate-200 dark:bg-slate-900/80 border border-slate-300 dark:border-slate-800 text-slate-700 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 hover:border-brand-500/40 focus:outline-none focus:ring-2 focus:ring-brand-500" aria-label="Visit Muhammad Hammad GitHub Profile">
               <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
               </svg>
@@ -314,8 +328,8 @@
         </div>
 
         <!-- Hero Monogram & Backend Terminal Card (Right) -->
-        <div class="lg:col-span-5 reveal-init delay-200">
-          <div class="relative rounded-2xl border border-slate-300 dark:border-slate-800 bg-white dark:bg-slate-900/90 shadow-2xl overflow-hidden glass-card">
+        <div class="lg:col-span-5 reveal-init-right delay-200">
+          <div class="relative rounded-2xl border border-slate-300 dark:border-slate-800 bg-white dark:bg-slate-900/90 shadow-2xl overflow-hidden glass-card gradient-border float-animation">
             
             <!-- Terminal Window Bar -->
             <div class="px-4 py-3 bg-slate-100 dark:bg-slate-950/80 border-b border-slate-200 dark:border-slate-800 flex items-center justify-between">
@@ -406,12 +420,12 @@
     <!-- =======================================================================
          ABOUT SECTION
          ======================================================================= -->
-    <section id="about" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 border-t border-slate-200 dark:border-slate-800/60">
+    <section id="about" class="section-divider reveal-init max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 border-t border-slate-200 dark:border-slate-800/60">
       
       <!-- Section Header -->
       <div class="space-y-2 mb-12 reveal-init">
         <p class="font-mono text-xs uppercase tracking-widest text-brand-600 dark:text-brand-400">// 01. WHO I AM</p>
-        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-slate-100 tracking-tight">About Me</h2>
+        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-slate-100 tracking-tight shimmer-text">About Me</h2>
       </div>
 
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
@@ -457,7 +471,7 @@
               </svg>
             </div>
             <div>
-              <div class="font-mono text-2xl font-bold text-slate-900 dark:text-slate-100">3.71 / 4.00</div>
+              <div class="font-mono text-2xl font-bold text-slate-900 dark:text-slate-100"><span data-count-to="3.71">0.00</span> / 4.00</div>
               <div class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Software Engineering CGPA</div>
               <div class="text-[11px] text-brand-600 dark:text-brand-400 font-mono mt-1">PMAS Arid Agriculture University</div>
             </div>
@@ -486,19 +500,19 @@
     <!-- =======================================================================
          SKILLS SECTION (With SVG Logos + Micro-Animations)
          ======================================================================= -->
-    <section id="skills" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 border-t border-slate-200 dark:border-slate-800/60">
+    <section id="skills" class="section-divider reveal-init max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 border-t border-slate-200 dark:border-slate-800/60">
       
       <!-- Section Header -->
       <div class="space-y-2 mb-12 reveal-init">
         <p class="font-mono text-xs uppercase tracking-widest text-brand-600 dark:text-brand-400">// 02. TECHNICAL ARSENAL</p>
-        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-slate-100 tracking-tight">Skills &amp; Capabilities</h2>
+        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-slate-100 tracking-tight shimmer-text">Skills &amp; Capabilities</h2>
         <p class="text-slate-600 dark:text-slate-400 text-sm max-w-xl">
           Grouped by specialized architectural domain with official technology logos and interactive hover micro-animations.
         </p>
       </div>
 
       <!-- Skills Categories Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 stagger-fade">
 
         <!-- Category 1: Languages -->
         <div class="p-6 rounded-2xl bg-white dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 shadow-lg dark:shadow-none hover:border-brand-500/40 transition-all reveal-init">
@@ -749,12 +763,12 @@
     <!-- =======================================================================
          EXPERIENCE SECTION (Timeline With SVG Tech Badges)
          ======================================================================= -->
-    <section id="experience" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 border-t border-slate-200 dark:border-slate-800/60">
+    <section id="experience" class="section-divider reveal-init max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 border-t border-slate-200 dark:border-slate-800/60">
       
       <!-- Section Header -->
       <div class="space-y-2 mb-12 reveal-init">
         <p class="font-mono text-xs uppercase tracking-widest text-brand-600 dark:text-brand-400">// 03. CAREER &amp; APPRENTICESHIP</p>
-        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-slate-100 tracking-tight">Work Experience</h2>
+        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-slate-100 tracking-tight shimmer-text">Work Experience</h2>
         <p class="text-slate-600 dark:text-slate-400 text-sm max-w-xl">
           Engineering backend architectures, background queues, and reliable API services.
         </p>
@@ -767,7 +781,7 @@
         <div class="relative group reveal-init">
           
           <!-- Node Dot -->
-          <div class="absolute -left-[31px] sm:-left-[39px] top-1.5 w-4 h-4 rounded-full bg-white dark:bg-slate-950 border-2 border-brand-500 group-hover:scale-125 transition-transform shadow-md shadow-brand-500/50">
+          <div class="timeline-dot absolute -left-[31px] sm:-left-[39px] top-1.5 w-4 h-4 rounded-full bg-white dark:bg-slate-950 border-2 border-brand-500 group-hover:scale-125 transition-transform shadow-md shadow-brand-500/50">
             <span class="w-1.5 h-1.5 rounded-full bg-brand-500 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></span>
           </div>
 
@@ -876,12 +890,12 @@
     <!-- =======================================================================
          PROJECTS SECTION (With Tech Logos & Micro-Animations)
          ======================================================================= -->
-    <section id="projects" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 border-t border-slate-200 dark:border-slate-800/60">
+    <section id="projects" class="section-divider reveal-init max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 border-t border-slate-200 dark:border-slate-800/60">
       
       <!-- Section Header -->
       <div class="space-y-2 mb-12 reveal-init">
         <p class="font-mono text-xs uppercase tracking-widest text-brand-600 dark:text-brand-400">// 04. FEATURED SYSTEMS</p>
-        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-slate-100 tracking-tight">Featured Projects</h2>
+        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-slate-100 tracking-tight shimmer-text">Featured Projects</h2>
         <p class="text-slate-600 dark:text-slate-400 text-sm max-w-xl">
           Real-world, multi-tenant, and high-performance backend systems with live deployments and open source repositories.
         </p>
@@ -891,7 +905,7 @@
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
 
         <!-- Project 1: AppointFlow -->
-        <div class="flex flex-col justify-between p-6 sm:p-7 rounded-2xl bg-white dark:bg-slate-900/70 border border-slate-200 dark:border-slate-800 hover:border-brand-500/50 hover:shadow-2xl hover:shadow-brand-500/10 transition-all reveal-init">
+        <div class="tilt-card flex flex-col justify-between p-6 sm:p-7 rounded-2xl bg-white dark:bg-slate-900/70 border border-slate-200 dark:border-slate-800 hover:border-brand-500/50 hover:shadow-2xl hover:shadow-brand-500/10 transition-all reveal-init">
           <div class="space-y-4">
             
             <!-- Project Top Bar -->
@@ -990,7 +1004,7 @@
         </div>
 
         <!-- Project 2: HM Sports -->
-        <div class="flex flex-col justify-between p-6 sm:p-7 rounded-2xl bg-white dark:bg-slate-900/70 border border-slate-200 dark:border-slate-800 hover:border-brand-500/50 hover:shadow-2xl hover:shadow-brand-500/10 transition-all reveal-init delay-100">
+        <div class="tilt-card flex flex-col justify-between p-6 sm:p-7 rounded-2xl bg-white dark:bg-slate-900/70 border border-slate-200 dark:border-slate-800 hover:border-brand-500/50 hover:shadow-2xl hover:shadow-brand-500/10 transition-all reveal-init delay-100">
           <div class="space-y-4">
             
             <!-- Project Top Bar -->
@@ -1092,7 +1106,7 @@
         </div>
 
         <!-- Project 3: LibHub -->
-        <div class="flex flex-col justify-between p-6 sm:p-7 rounded-2xl bg-white dark:bg-slate-900/70 border border-slate-200 dark:border-slate-800 hover:border-brand-500/50 hover:shadow-2xl hover:shadow-brand-500/10 transition-all reveal-init delay-200">
+        <div class="tilt-card flex flex-col justify-between p-6 sm:p-7 rounded-2xl bg-white dark:bg-slate-900/70 border border-slate-200 dark:border-slate-800 hover:border-brand-500/50 hover:shadow-2xl hover:shadow-brand-500/10 transition-all reveal-init delay-200">
           <div class="space-y-4">
             
             <!-- Project Top Bar -->
@@ -1193,12 +1207,12 @@
     <!-- =======================================================================
          EDUCATION SECTION
          ======================================================================= -->
-    <section id="education" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 border-t border-slate-200 dark:border-slate-800/60">
+    <section id="education" class="section-divider reveal-init max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 border-t border-slate-200 dark:border-slate-800/60">
       
       <!-- Section Header -->
       <div class="space-y-2 mb-12 reveal-init">
         <p class="font-mono text-xs uppercase tracking-widest text-brand-600 dark:text-brand-400">// 05. ACADEMIC FOUNDATION</p>
-        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-slate-100 tracking-tight">Education</h2>
+        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-slate-100 tracking-tight shimmer-text">Education</h2>
       </div>
 
       <!-- Education Card -->
@@ -1244,7 +1258,7 @@
             </div>
             <div class="text-right">
               <div class="font-mono text-2xl font-black text-brand-600 dark:text-brand-400">
-                CGPA 3.71
+                CGPA <span data-count-to="3.71">0.00</span>
               </div>
               <div class="text-[11px] text-slate-500 dark:text-slate-400 font-mono">
                 Scale: 4.00
@@ -1259,12 +1273,12 @@
     <!-- =======================================================================
          CONTACT SECTION
          ======================================================================= -->
-    <section id="contact" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 border-t border-slate-200 dark:border-slate-800/60">
+    <section id="contact" class="section-divider reveal-init max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 border-t border-slate-200 dark:border-slate-800/60">
       
       <!-- Section Header -->
       <div class="space-y-2 mb-12 reveal-init">
         <p class="font-mono text-xs uppercase tracking-widest text-brand-600 dark:text-brand-400">// 06. GET IN TOUCH</p>
-        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-slate-100 tracking-tight">Contact &amp; Collaboration</h2>
+        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-slate-100 tracking-tight shimmer-text">Contact &amp; Collaboration</h2>
         <p class="text-slate-600 dark:text-slate-400 text-sm max-w-xl">
           Interested in working together or discussing backend engineering roles? Let's connect.
         </p>
@@ -1363,26 +1377,26 @@
               <!-- Name Input -->
               <div class="space-y-1.5">
                 <label for="contact-name" class="block font-mono text-xs text-slate-700 dark:text-slate-300">YOUR NAME *</label>
-                <input type="text" id="contact-name" name="name" required placeholder="Jane Doe" class="w-full px-4 py-2.5 rounded-xl bg-slate-50 dark:bg-slate-950/80 border border-slate-300 dark:border-slate-800 text-slate-900 dark:text-slate-100 text-sm focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 placeholder-slate-400 dark:placeholder-slate-600 transition-all">
+                <input type="text" id="contact-name" name="name" required placeholder="Jane Doe" class="w-full px-4 py-2.5 rounded-xl bg-slate-50 dark:bg-slate-950/80 border border-slate-300 dark:border-slate-800 text-slate-900 dark:text-slate-100 text-sm focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 placeholder-slate-400 dark:placeholder-slate-600 transition-all form-input">
               </div>
 
               <!-- Email Input -->
               <div class="space-y-1.5">
                 <label for="contact-email" class="block font-mono text-xs text-slate-700 dark:text-slate-300">YOUR EMAIL *</label>
-                <input type="email" id="contact-email" name="email" required placeholder="jane@example.com" class="w-full px-4 py-2.5 rounded-xl bg-slate-50 dark:bg-slate-950/80 border border-slate-300 dark:border-slate-800 text-slate-900 dark:text-slate-100 text-sm focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 placeholder-slate-400 dark:placeholder-slate-600 transition-all">
+                <input type="email" id="contact-email" name="email" required placeholder="jane@example.com" class="w-full px-4 py-2.5 rounded-xl bg-slate-50 dark:bg-slate-950/80 border border-slate-300 dark:border-slate-800 text-slate-900 dark:text-slate-100 text-sm focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 placeholder-slate-400 dark:placeholder-slate-600 transition-all form-input">
               </div>
             </div>
 
             <!-- Subject Input -->
             <div class="space-y-1.5">
               <label for="contact-subject" class="block font-mono text-xs text-slate-700 dark:text-slate-300">SUBJECT</label>
-              <input type="text" id="contact-subject" name="subject" placeholder="Backend Engineer Role / Project Inquiry" class="w-full px-4 py-2.5 rounded-xl bg-slate-50 dark:bg-slate-950/80 border border-slate-300 dark:border-slate-800 text-slate-900 dark:text-slate-100 text-sm focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 placeholder-slate-400 dark:placeholder-slate-600 transition-all">
+              <input type="text" id="contact-subject" name="subject" placeholder="Backend Engineer Role / Project Inquiry" class="w-full px-4 py-2.5 rounded-xl bg-slate-50 dark:bg-slate-950/80 border border-slate-300 dark:border-slate-800 text-slate-900 dark:text-slate-100 text-sm focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 placeholder-slate-400 dark:placeholder-slate-600 transition-all form-input">
             </div>
 
             <!-- Message Textarea -->
             <div class="space-y-1.5">
               <label for="contact-message" class="block font-mono text-xs text-slate-700 dark:text-slate-300">MESSAGE *</label>
-              <textarea id="contact-message" name="message" rows="4" required placeholder="Hi Hammad, I'd like to discuss an opportunity..." class="w-full px-4 py-2.5 rounded-xl bg-slate-50 dark:bg-slate-950/80 border border-slate-300 dark:border-slate-800 text-slate-900 dark:text-slate-100 text-sm focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 placeholder-slate-400 dark:placeholder-slate-600 transition-all resize-y"></textarea>
+              <textarea id="contact-message" name="message" rows="4" required placeholder="Hi Hammad, I'd like to discuss an opportunity..." class="w-full px-4 py-2.5 rounded-xl bg-slate-50 dark:bg-slate-950/80 border border-slate-300 dark:border-slate-800 text-slate-900 dark:text-slate-100 text-sm focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 placeholder-slate-400 dark:placeholder-slate-600 transition-all form-input resize-y"></textarea>
             </div>
 
             <!-- Submit Button & Note -->

@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initTheme();
   initTypingEffect();
   initScrollReveal();
+  initStaggerReveal();
   initNavbarScroll();
   initActiveNavHighlight();
   initMobileMenu();
@@ -14,6 +15,11 @@ document.addEventListener('DOMContentLoaded', () => {
   initContactForm();
   initBackToTop();
   initCurrentYear();
+  initScrollProgress();
+  initTiltCards();
+  initMagneticButtons();
+  initParallaxHero();
+  initCounterAnimations();
 });
 
 /* ==========================================================================
@@ -23,43 +29,48 @@ function initTheme() {
   const themeToggleBtn = document.getElementById('theme-toggle');
   const themeToggleMobileBtn = document.getElementById('theme-toggle-mobile');
   
-  // Determine starting theme: dark by default, unless explicitly set to light
   const savedTheme = localStorage.getItem('mh_portfolio_theme');
   const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
   
   const currentTheme = savedTheme ? savedTheme : (prefersDark !== false ? 'dark' : 'dark');
-  applyTheme(currentTheme);
+  applyTheme(currentTheme, false);
 
-  function applyTheme(theme) {
+  function applyTheme(theme, animate = true) {
     if (theme === 'dark') {
       document.documentElement.classList.add('dark');
       document.documentElement.classList.remove('light');
-      updateThemeIcons('dark');
+      updateThemeIcons('dark', animate);
       localStorage.setItem('mh_portfolio_theme', 'dark');
     } else {
       document.documentElement.classList.remove('dark');
       document.documentElement.classList.add('light');
-      updateThemeIcons('light');
+      updateThemeIcons('light', animate);
       localStorage.setItem('mh_portfolio_theme', 'light');
     }
   }
 
-  function updateThemeIcons(theme) {
+  function updateThemeIcons(theme, animate) {
     const sunIcons = document.querySelectorAll('.theme-icon-sun');
     const moonIcons = document.querySelectorAll('.theme-icon-moon');
     
     if (theme === 'dark') {
-      sunIcons.forEach(icon => icon.classList.remove('hidden'));
+      sunIcons.forEach(icon => {
+        icon.classList.remove('hidden');
+        if (animate) { icon.classList.add('theme-icon-animate'); setTimeout(() => icon.classList.remove('theme-icon-animate'), 500); }
+      });
       moonIcons.forEach(icon => icon.classList.add('hidden'));
     } else {
       sunIcons.forEach(icon => icon.classList.add('hidden'));
-      moonIcons.forEach(icon => icon.classList.remove('hidden'));
+      moonIcons.forEach(icon => {
+        icon.classList.remove('hidden');
+        if (animate) { icon.classList.add('theme-icon-animate'); setTimeout(() => icon.classList.remove('theme-icon-animate'), 500); }
+      });
     }
   }
 
   function toggleTheme() {
     const isDark = document.documentElement.classList.contains('dark');
-    applyTheme(isDark ? 'light' : 'dark');
+    applyTheme(isDark ? 'light' : 'dark', true);
   }
 
   if (themeToggleBtn) {
@@ -121,7 +132,7 @@ function initTypingEffect() {
    3. Native IntersectionObserver Scroll Reveal
    ========================================================================== */
 function initScrollReveal() {
-  const revealElements = document.querySelectorAll('.reveal-init');
+  const revealElements = document.querySelectorAll('.reveal-init, .reveal-init-left, .reveal-init-right, .reveal-init-scale, .section-divider');
   
   if (!('IntersectionObserver' in window)) {
     revealElements.forEach(el => el.classList.add('reveal-visible'));
@@ -142,6 +153,32 @@ function initScrollReveal() {
   });
 
   revealElements.forEach(el => revealObserver.observe(el));
+}
+
+/* ==========================================================================
+   3b. Stagger Reveal (child stagger animations)
+   ========================================================================== */
+function initStaggerReveal() {
+  const staggerContainers = document.querySelectorAll('.stagger-fade');
+
+  if (!('IntersectionObserver' in window)) {
+    staggerContainers.forEach(el => el.classList.add('stagger-visible'));
+    return;
+  }
+
+  const staggerObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('stagger-visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.15,
+    rootMargin: '0px 0px -30px 0px'
+  });
+
+  staggerContainers.forEach(el => staggerObserver.observe(el));
 }
 
 /* ==========================================================================
@@ -379,4 +416,131 @@ function initCurrentYear() {
   if (yearElement) {
     yearElement.textContent = new Date().getFullYear();
   }
+}
+
+/* ==========================================================================
+   11. Scroll Progress Bar
+   ========================================================================== */
+function initScrollProgress() {
+  const progressBar = document.getElementById('scroll-progress');
+  if (!progressBar) return;
+
+  function updateProgress() {
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+    progressBar.style.width = progress + '%';
+  }
+
+  window.addEventListener('scroll', updateProgress, { passive: true });
+  updateProgress();
+}
+
+/* ==========================================================================
+   12. 3D Tilt Cards (Project cards)
+   ========================================================================== */
+function initTiltCards() {
+  const tiltCards = document.querySelectorAll('.tilt-card');
+
+  tiltCards.forEach(card => {
+    card.addEventListener('mousemove', (e) => {
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      const centerX = rect.width / 2;
+      const centerY = rect.height / 2;
+      
+      const rotateX = ((y - centerY) / centerY) * -4;
+      const rotateY = ((x - centerX) / centerX) * 4;
+
+      card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.01)`;
+    });
+
+    card.addEventListener('mouseleave', () => {
+      card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1)';
+    });
+  });
+}
+
+/* ==========================================================================
+   13. Magnetic Buttons
+   ========================================================================== */
+function initMagneticButtons() {
+  const magneticBtns = document.querySelectorAll('.magnetic-btn');
+
+  magneticBtns.forEach(btn => {
+    btn.addEventListener('mousemove', (e) => {
+      const rect = btn.getBoundingClientRect();
+      const x = e.clientX - rect.left - rect.width / 2;
+      const y = e.clientY - rect.top - rect.height / 2;
+      
+      btn.style.transform = `translate(${x * 0.15}px, ${y * 0.15}px) scale(1.02)`;
+    });
+
+    btn.addEventListener('mouseleave', () => {
+      btn.style.transform = 'translate(0, 0) scale(1)';
+    });
+  });
+}
+
+/* ==========================================================================
+   14. Parallax Hero (subtle background movement)
+   ========================================================================== */
+function initParallaxHero() {
+  const heroSection = document.querySelector('.hero-glow');
+  if (!heroSection) return;
+
+  const particles = heroSection.querySelectorAll('.hero-particle');
+  if (!particles.length) return;
+
+  window.addEventListener('mousemove', (e) => {
+    const x = (e.clientX / window.innerWidth - 0.5) * 2;
+    const y = (e.clientY / window.innerHeight - 0.5) * 2;
+
+    particles.forEach((p, i) => {
+      const speed = (i + 1) * 8;
+      p.style.transform = `translate(${x * speed}px, ${y * speed}px)`;
+    });
+  }, { passive: true });
+}
+
+/* ==========================================================================
+   15. Counter Animations (Animated CGPA / Stats)
+   ========================================================================== */
+function initCounterAnimations() {
+  const counters = document.querySelectorAll('[data-count-to]');
+  if (!counters.length) return;
+
+  const counterObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const el = entry.target;
+        const target = parseFloat(el.getAttribute('data-count-to'));
+        const decimals = (target.toString().split('.')[1] || '').length;
+        const duration = 1500;
+        const start = performance.now();
+
+        function animate(now) {
+          const elapsed = now - start;
+          const progress = Math.min(elapsed / duration, 1);
+          const eased = 1 - Math.pow(1 - progress, 3);
+          const current = eased * target;
+          
+          el.textContent = current.toFixed(decimals);
+          
+          if (progress < 1) {
+            requestAnimationFrame(animate);
+          } else {
+            el.textContent = target.toFixed(decimals);
+            el.classList.add('count-animate');
+          }
+        }
+        
+        requestAnimationFrame(animate);
+        observer.unobserve(el);
+      }
+    });
+  }, { threshold: 0.5 });
+
+  counters.forEach(el => counterObserver.observe(el));
 }
