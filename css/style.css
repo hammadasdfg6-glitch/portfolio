@@ -182,54 +182,58 @@ html:not(.dark) .hero-glow {
 .glow-border-card {
   position: relative;
   display: flex;
+  flex-direction: column;
   overflow: hidden;
-  border-radius: 1.25rem; /* 20px */
+  border-radius: 20px;
   background: #cbd5e1;
-  padding: 2px;
-  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s ease;
+  padding: 3px;
   isolation: isolate;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s ease, opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 html.dark .glow-border-card {
   background: #1e293b;
 }
 
-.glow-border-card:hover {
-  transform: translateY(-5px);
+.glow-border-card.reveal-visible:hover {
+  transform: translateY(-6px);
 }
 
 html.dark .glow-border-card:hover {
-  box-shadow: 0 16px 36px -8px rgba(16, 185, 129, 0.3), 0 0 25px rgba(6, 182, 212, 0.2);
+  box-shadow: 0 20px 45px -10px rgba(16, 185, 129, 0.3), 0 0 30px -5px rgba(6, 182, 212, 0.2);
 }
 
 html:not(.dark) .glow-border-card:hover {
-  box-shadow: 0 16px 36px -8px rgba(16, 185, 129, 0.2), 0 0 25px rgba(6, 182, 212, 0.12);
+  box-shadow: 0 20px 45px -10px rgba(16, 185, 129, 0.2), 0 0 30px -5px rgba(6, 182, 212, 0.12);
 }
 
 .glow-border-card::before {
   content: '';
   position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
+  top: 50%;
+  left: 50%;
+  width: 140px;
+  height: 350%;
   background-image: linear-gradient(180deg, #10b981, #06b6d4, #3b82f6);
-  animation: rotBGimg 3.5s linear infinite;
+  transform: translate(-50%, -50%) rotate(0deg);
+  transform-origin: center center;
+  animation: rotBGimg 4s linear infinite;
   z-index: 0;
-  transition: all 0.3s ease;
+  pointer-events: none;
 }
 
 .glow-border-card:hover::before {
-  animation-duration: 2s;
-  background-image: linear-gradient(180deg, #34d399, #06b6d4, #60a5fa);
+  animation-duration: 2.2s;
+  background-image: linear-gradient(180deg, #34d399, #22d3ee, #60a5fa);
+  width: 180px;
 }
 
 @keyframes rotBGimg {
-  from {
-    transform: rotate(0deg);
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
   }
 }
 
@@ -238,7 +242,8 @@ html:not(.dark) .glow-border-card:hover {
   z-index: 1;
   width: 100%;
   height: 100%;
-  border-radius: calc(1.25rem - 2px);
+  flex: 1 1 auto;
+  border-radius: 17px;
   background: #ffffff;
   display: flex;
   flex-direction: column;
